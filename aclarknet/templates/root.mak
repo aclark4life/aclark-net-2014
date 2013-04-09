@@ -149,8 +149,8 @@
           <p><a class="btn" href="/contact">View details &raquo;</a></p>
        </div>
         <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+          <h2>Our Community</h2>
+          <p>In 2008, we created a non-profit organization, DC Python, to expand our outreach and service to the Python community in the Washington, D.C. and surrounding area. One of our most significant contributions via this organization is the facilitation and hosting of Plone Conference 2008.</p>
           <p><a class="btn" href="#">View details &raquo;</a></p>
         </div>
       </div>
