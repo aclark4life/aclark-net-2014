@@ -135,7 +135,7 @@
         <div class="span4">
           <h2>Our Team</h2>
           <p>Our team offers extensive experience in the development, deployment and maintenance of Python-based web applications. Please review our services, team, and clients sections for a summary of our experience and qualifications.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <p><a class="btn" href="/team">View details &raquo;</a></p>
         </div>
         <div class="span4">
           <h2>Heading</h2>
