@@ -123,8 +123,8 @@
 
       <!-- Jumbotron -->
       <div class="jumbotron">
-        <h1>We know Python. And open source. Period.</h1>
-        <p class="lead">Want to build professional web services for your business on a budget? Let our team help you use open source Python software to do it.</p>
+        <h1>We know Python. And open source.</h1>
+        <p class="lead">Want to build professional web services for your business on a budget? Let our team help you use beautiful Python open source software to do it.</p>
         <a class="btn btn-large btn-success" href="#">Get started today</a>
       </div>
 
