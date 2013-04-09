@@ -12,7 +12,7 @@
     <style type="text/css">
       body {
         background-color: #24261A;
-        background: url(IMG_0256.JPG) no-repeat;
+        background: url(/static/IMG_0256.JPG) no-repeat;
         padding-top: 20px;
         padding-bottom: 60px;
       }
