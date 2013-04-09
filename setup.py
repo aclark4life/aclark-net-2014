@@ -2,10 +2,13 @@ from setuptools import find_packages
 from setuptools import setup
 
 setup(
-    name='aclarknet', 
-    packages=find_packages(),
+    entry_points={
+        'paste.app_factory': 'main=aclarknet:main',
+    },
     install_requires=[
         'pyramid',
         'waitress',
     ],
+    name='aclarknet', 
+    packages=find_packages(),
 )
