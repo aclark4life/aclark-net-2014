@@ -81,6 +81,11 @@
         border-radius: 0 3px 3px 0;
       }
       .row-fluid {
+        background: #f9f9f9;
+        border-radius: 3px;
+      }
+      .span4 {
+        padding: 14px 24px;
       }
     </style>
     <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
@@ -133,7 +138,7 @@
 
       <!-- Example row of columns -->
       <div class="row-fluid"> 
-        <div class="span4">
+        <div class="span4"> 
           <h2>Our Team</h2>
           <p>Our team offers extensive experience in the development, deployment and maintenance of Python-based web applications. Please review our services, team, and clients sections for a summary of our experience and qualifications.</p>
           <p><a class="btn" href="/team">View details &raquo;</a></p>
