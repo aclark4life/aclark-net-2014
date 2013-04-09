@@ -145,7 +145,7 @@
         </div>
         <div class="span4">
           <h2>Our Location</h2>
-          <p>We are located in Bethesda, MD: a suburb of Washington, DC USA. If you are in the area, please get in touch. If you are out of the area, please get in touch anyway; we service a global community of individuals and organizations and take pride in our ability to do so.</p>
+          <p>We are located in Bethesda, MD: a suburb of Washington, DC USA. If you are in the area, please get in touch. If you are not in the area, please get in touch anyway; we service a global community of individuals and organizations and take pride in our ability to do so.</p>
           <p><a class="btn" href="#">View details &raquo;</a></p>
        </div>
         <div class="span4">
