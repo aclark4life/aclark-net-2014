@@ -37,7 +37,7 @@
       .jumbotron .lead {
         font-size: 24px;
         line-height: 1.25;
-        margin-right: 5em;
+        margin-right: 50px;
       }
       .jumbotron .btn {
         font-size: 21px;
@@ -131,7 +131,7 @@
       <!-- Jumbotron -->
       <div class="jumbotron">
         <h1>We know Python.<br />We know open source.</h1>
-        <p class="lead">Do you want to create elegant and professional web services for your business, on a budget? Use free and open source Python software for (almost) instant return on investment, and much more.</p>
+        <p class="lead">Do you want to create professional websites for your business on a budget? Use free and open source Python software for instant return on investment and much more.</p>
         <a class="btn btn-large btn-success" href="/contact">Get started today</a>
       </div>
 
