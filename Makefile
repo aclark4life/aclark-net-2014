@@ -1,2 +1,2 @@
 push:
-	git push ; git push heroku master
+	git push heroku master
