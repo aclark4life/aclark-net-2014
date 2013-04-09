@@ -130,7 +130,7 @@
       <!-- Jumbotron -->
       <div class="jumbotron">
         <h1>We know Python.<br />We know open source.</h1>
-        <p class="lead">Would you like to build professional web services for your business on a budget? Use open source Python software to do it.</p>
+        <p class="lead">Build professional web services for your business on a budget. Use open source Python software to do it.</p>
         <a class="btn btn-large btn-success" href="/contact">Get started today</a>
       </div>
 
