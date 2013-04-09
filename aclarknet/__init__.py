@@ -29,6 +29,12 @@ def main(global_config, **settings):
         route_name='contact',
         renderer='aclarknet:templates/contact.mak')
 
+    config.add_route('projects', '/projects')
+    config.add_view(
+        'aclarknet.views.projects',
+        route_name='projects',
+        renderer='aclarknet:templates/projects.mak')
+
     config.add_static_view(
         'static', 'aclarknet:static', cache_max_age=3600)
 
