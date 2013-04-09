@@ -86,7 +86,7 @@
         background: #f9f9f9;
         border-radius: 3px;
       }
-      .span4 {
+      .span4, .span12 {
         padding: 14px 24px;
       }
     </style>
@@ -117,12 +117,14 @@
           <div class="navbar-inner">
             <div class="container">
               <ul class="nav">
+                <%block name="nav">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Downloads</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="/contact">Contact</a></li>
+                </%block>
               </ul>
             </div>
           </div>
