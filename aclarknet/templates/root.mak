@@ -124,14 +124,14 @@
       <!-- Jumbotron -->
       <div class="jumbotron">
         <h1>We know Python. And open source.</h1>
-        <p class="lead">Want to build professional web services for your business on a budget? Use beautiful open source Python software to do it.</p>
-        <a class="btn btn-large btn-success" href="#">Get started today</a>
+        <p class="lead">Want to build professional web services for your business on a budget? Let our team use beautiful open source Python software to do it for you.</p>
+        <a class="btn btn-large btn-success" href="/contact">Get started today</a>
       </div>
 
       <hr>
 
       <!-- Example row of columns -->
-      <div class="row-fluid">
+      <div class="row-fluid" style="background: #f9f9f9;">
         <div class="span4">
           <h2>Our Team</h2>
           <p>Our team offers extensive experience in the development, deployment and maintenance of Python-based web applications. Please review our services, team, and clients sections for a summary of our experience and qualifications.</p>
