@@ -11,7 +11,8 @@
     <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
       body {
-        background: url(IMG_0256.JPG);
+        background-color: #24261A;
+        background: url(IMG_0256.JPG) no-repeat;
         padding-top: 20px;
         padding-bottom: 60px;
       }
