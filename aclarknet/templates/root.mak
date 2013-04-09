@@ -37,6 +37,7 @@
       .jumbotron .lead {
         font-size: 24px;
         line-height: 1.25;
+        margin-right: 5em;
       }
       .jumbotron .btn {
         font-size: 21px;
