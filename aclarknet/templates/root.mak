@@ -150,8 +150,8 @@
        </div>
         <div class="span4">
           <h2>Our Community</h2>
-          <p>In 2008 we created a non-profit organization to expand our outreach and service to the Python community in Washington, DC. One of our most significant contributions via this organization is the hosting of Plone Conference 2008.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <p>In 2008, we created a Maryland 501(c)(3) non-profit organization to expand our outreach and service to the Python community in Washington, DC. One of our most significant contributions via this organization is the hosting of Plone Conference 2008.</p>
+          <p><a class="btn" href="http://dcpython.org">View details &raquo;</a></p>
         </div>
       </div>
 
