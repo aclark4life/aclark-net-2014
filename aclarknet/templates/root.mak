@@ -9,6 +9,7 @@
 
     <!-- Le styles -->
     <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/font-awesome.css" rel="stylesheet">
     <style type="text/css">
       body {
         background: url(/static/IMG_0256.JPG) center top no-repeat; 
@@ -121,7 +122,7 @@
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Downloads</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/contact">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -129,16 +130,16 @@
       </div>
 
 
-      <%block name="jumbotron">
 
       <!-- Jumbotron -->
+      <%block name="jumbotron">
       <div class="jumbotron">
         <h1>We know Python.<br />We know open source.</h1>
         <p class="lead">Do you want to create professional web services for your business, on a budget? Use open source Python software for instant ROI, and more.</p>
         <a class="btn btn-large btn-success" href="/contact">Get started today</a>
       </div>
-
       </%block>
+
 
       <hr>
 
