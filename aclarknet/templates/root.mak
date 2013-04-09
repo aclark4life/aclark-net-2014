@@ -11,8 +11,7 @@
     <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
       body {
-        background-color: #24261A;
-        background: url(/static/IMG_0256.JPG) no-repeat;
+        background: url(/static/IMG_0256.JPG) center top no-repeat; 
         padding-top: 20px;
         padding-bottom: 60px;
       }
@@ -81,6 +80,8 @@
         border-right: 0;
         border-radius: 0 3px 3px 0;
       }
+      .row-fluid {
+      }
     </style>
     <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -131,15 +132,15 @@
       <hr>
 
       <!-- Example row of columns -->
-      <div class="row-fluid" style="background: #f9f9f9;">
+      <div class="row-fluid"> 
         <div class="span4">
           <h2>Our Team</h2>
           <p>Our team offers extensive experience in the development, deployment and maintenance of Python-based web applications. Please review our services, team, and clients sections for a summary of our experience and qualifications.</p>
           <p><a class="btn" href="/team">View details &raquo;</a></p>
         </div>
         <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <h2>Our Location</h2>
+          <p>We are located in a suberb of Washington, DC called Bethesda, MD USA. If you are in the area, get in touch. If you are out of the area, get in touch anyway; we service a global community of organizations.</p>
           <p><a class="btn" href="#">View details &raquo;</a></p>
        </div>
         <div class="span4">
