@@ -152,7 +152,7 @@
       <hr>
 
       <div class="footer">
-        <p>&copy; Company 2013</p>
+        <p>&copy; ACLARK.NET, LLC 2004-2013</p>
       </div>
 
     </div> <!-- /container -->
