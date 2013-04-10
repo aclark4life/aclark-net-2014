@@ -33,7 +33,7 @@
         text-align: center;
       }
       .jumbotron h1 {
-        font-size: 75px;
+        font-size: 85px;
         line-height: 1;
       }
       .jumbotron .lead {
