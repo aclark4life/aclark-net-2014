@@ -89,6 +89,9 @@
       .span4, .span12 {
         padding: 14px 24px;
       }
+      .footer {
+        color: #f9f9f9;
+      }
     </style>
     <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -167,7 +170,7 @@
       <hr>
 
       <div class="footer">
-        <p>&copy; ACLARK.NET, LLC 2004-2013</p>
+        <p>&copy; ACLARK.NET, LLC 2004-2013. All rights reserved.</p>
       </div>
 
     </div> <!-- /container -->
