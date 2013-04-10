@@ -153,20 +153,20 @@
 
       <!-- Example row of columns -->
       <div class="row-fluid"> 
-        <div class="span4"> 
-          <h2>Our Team</h2>
-          <p>Our team offers extensive experience in the development, deployment and maintenance of Python-based web applications. Please review our services, team, and clients sections for a summary of our experience and qualifications.</p>
-          <p><a class="btn" href="/team">View details &raquo;</a></p>
+        <div class="span4">
+          <h2>Community</h2>
+          <p><i class="icon-group icon-2x pull-left"></i>In 2008, we created a Maryland 501(c)(3) non-profit organization to expand our outreach and service to the Python community in Washington, DC USA. One of our most significant contributions via this organization is the hosting of Plone Conference 2008.</p>
+          <p><a class="btn" href="http://dcpython.org">View details &raquo;</a></p>
         </div>
         <div class="span4">
-          <h2>Our Location</h2>
-          <p>We are located in Bethesda, MD: a suburb of Washington, DC USA. If you are in the area, please get in touch. If you are not in the area, please get in touch anyway; we service a global community of individuals and organizations and take pride in our ability to do so.</p>
+          <h2>Location</h2>
+          <p><i class="icon-globe icon-2x pull-left"></i>We are located in Bethesda, MD: a suburb of Washington, DC USA. If you are in the area, please get in touch. If you are not in the area, please get in touch anyway; we service a global community of individuals and organizations and take pride in our ability to do so.</p>
           <p><a class="btn" href="/contact">View details &raquo;</a></p>
-       </div>
-        <div class="span4">
-          <h2>Our Community</h2>
-          <p>In 2008, we created a Maryland 501(c)(3) non-profit organization to expand our outreach and service to the Python community in Washington, DC USA. One of our most significant contributions via this organization is the hosting of Plone Conference 2008.</p>
-          <p><a class="btn" href="http://dcpython.org">View details &raquo;</a></p>
+        </div>
+        <div class="span4"> 
+          <h2>Team</h2>
+          <p><i class="icon-group icon-2x pull-left"></i>Our team offers extensive experience in the development, deployment and maintenance of Python-based web applications. Please review our services, team, and clients sections for a summary of our experience and qualifications.</p>
+          <p><a class="btn" href="/team">View details &raquo;</a></p>
         </div>
       </div>
 
