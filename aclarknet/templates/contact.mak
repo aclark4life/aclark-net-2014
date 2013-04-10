@@ -19,7 +19,7 @@
             Rapidiously utilize high-payoff users without sustainable products. Enthusiastically morph cooperative networks vis-a-vis global action items. Synergistically disintermediate customized interfaces after e-business expertise. </p>
 
 
-        <pre class="offset2 span6" style="font-size: 200%;line-height: 35px">
+        <pre class="offset1 span6" style="font-family: 'Rough Typewriter'; font-size: 200%;line-height: 35px">
 
   ACLARK.NET, LLC
   Bethesda, MD USA

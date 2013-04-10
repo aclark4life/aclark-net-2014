@@ -9,6 +9,7 @@
 
     <!-- Le styles -->
     <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/aclarknet.css" rel="stylesheet">
     <link href="/static/font-awesome.css" rel="stylesheet">
     <style type="text/css">
       body {
