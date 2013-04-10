@@ -2,3 +2,10 @@
   font-family: "Rough Typewriter";
   src: url(/static/rough_typewriter.otf) format('opentype');
 }
+
+.contact {
+    font-family: 'Rough Typewriter';
+    font-size: 300%;
+    line-height: 40px;
+    margin: 1em;
+}

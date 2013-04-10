@@ -18,15 +18,12 @@
             <p class="lead">
             Rapidiously utilize high-payoff users without sustainable products. Enthusiastically morph cooperative networks vis-a-vis global action items. Synergistically disintermediate customized interfaces after e-business expertise. </p>
 
-
-        <pre class="offset1 span6" style="font-family: 'Rough Typewriter'; font-size: 200%;line-height: 35px">
-
-  ACLARK.NET, LLC
-  Bethesda, MD USA
-  Email: <a href="mailto:info@aclark.net">info@aclark.net</a>
-  Phone: 301-312-5236
-        </pre>
-
+            <p class="contact">
+                ACLARK.NET, LLC <br />
+                Bethesda, MD USA <br />
+                Email: <a href="mailto:info@aclark.net">info@aclark.net</a> <br />
+                Phone: 301-312-5236
+            </p>
 
         </div>
     </div>
