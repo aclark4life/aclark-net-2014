@@ -38,25 +38,28 @@
         </span>
     </div>
 
-Training - Python Developer Training
+    <div class="row-fluid">
+        <span class="span12">
+            <h2>Training</h2>
+            <h3>Python Developer Training</h3>
+            <p class="lead"><i class="icon-book icon-2x pull-left"></i>We believe training is of critical importance to the success of your project and we have the resources to provide you with quality training on a variety of subjects. Whether you are attempting to transition from one software package to another, or you are starting up a new professional venture, training sets the pace for a successful future. Upon the implementation and subsequent installation of your newly developed and customized Python software, you may wish to engage us in either training and/or support services. We are available and highly qualified to provide either or both in order make certain that the system our clients rely upon is one that they can use to its full potential and benefit. Our trainings are catered to fit your needs; please contact us today to schedule a session.</p>
+        </span>
+    </div>
 
-python-logo-master-v3-TM.pngWe believe training is of critical importance to the success of your project and we have the resources to provide you with quality training on a variety of subjects. Whether you are attempting to transition from one software package to another, or you are starting up a new professional venture, training sets the pace for a successful future.
+    <div class="row-fluid">
+        <span class="span12">
+            <h2>Support</h2>
+            <h3>Python Application Support</h3>
+            <p class="lead"><i class="icon-user icon-2x pull-left"></i>Our support plans allow us to provide comprehensive consulting, technical advice, strategic project planning, and technical support to our clients before, after and during the implementation of a software application and/or add-on we have developed, or for an existing Python web application. Our "Best Of Breed" approach will assist our clients in both the design and the implementation of the infrastructure necessary to ensure a system&apos;overall reliable performance. Our team’s experience, knowledge and expertise in effectively implementing Python software applications will position our clients for success in their field.</p>
+        </span>
+    </div>
 
-Upon the implementation and subsequent installation of your newly developed and customized Python software, you may wish to engage us in either training and/or support services. We are available and highly qualified to provide either or both in order make certain that the system our clients rely upon is one that they can use to its full potential and benefit.
-
-Our trainings are catered to fit your needs; please contact us today to schedule a session.
-
-Support - Python Application Support
-
-zopeHIres.jpg
-
-Our support plans allow us to provide comprehensive consulting, technical advice, strategic project planning, and technical support to our clients before, after and during the implementation of a software application and/or add-on we have developed, or for an existing Python web application.
-
-Our "Best Of Breed" approach will assist our clients in both the design and the implementation of the infrastructure necessary to ensure a system's overall reliable performance. Our team’s experience, knowledge and expertise in effectively implementing Python software applications will position our clients for success in their field.
-
-Applications - Software As A Service Offering
-
-pyramid-medium.pngWe have developed a web application to help Python programmers publish and promote their software easily through the web. It is tightly integrated with leading source code hosting websites, and facilitates a never-before-seen level of speed and ease in publishing.
-
+    <div class="row-fluid">
+        <span class="span12">
+        <h2>Applications</h2>
+        <h3>Software As A Service Offering</h3>
+        <p class="lead"><i class="icon-magic icon-2x pull-left"></i>We have developed a web application to help Python programmers publish and promote their software easily through the web. It is tightly integrated with leading source code hosting websites, and facilitates a never-before-seen level of speed and ease in publishing.</p>
+        </span>
+    </div>
 
 </%block>

@@ -13,7 +13,7 @@
     <link href="/static/font-awesome.css" rel="stylesheet">
     <style type="text/css">
       body {
-        background: url(/static/IMG_0256.JPG) center top no-repeat; 
+        background: url(/static/IMG_0256.JPG) center top no-repeat #24261A;
         padding-top: 20px;
         padding-bottom: 60px;
       }
