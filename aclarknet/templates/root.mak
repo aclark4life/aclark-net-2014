@@ -117,7 +117,7 @@
 
       <div class="masthead">
 
-        <h3 class="muted">ACLARK.NET, LLC</h3>
+        <h3 class="muted"><a href="/">ACLARK.NET, LLC</a></h3>
 
         <div class="navbar">
           <div class="navbar-inner">

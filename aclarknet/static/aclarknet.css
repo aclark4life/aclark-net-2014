@@ -3,6 +3,11 @@
   src: url(/static/rough_typewriter.otf) format('opentype');
 }
 
+.muted a {
+    color: #999999;
+    text-decoration: none;
+}
+
 .contact {
     font-family: 'Rough Typewriter';
     font-size: 300%;
