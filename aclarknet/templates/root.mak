@@ -160,7 +160,7 @@
         </div>
         <div class="span4">
           <h2>Location</h2>
-          <p><i class="icon-globe icon-2x pull-left"></i>We are located in Bethesda, MD: a suburb of Washington, DC USA. If you are in the area, please get in touch. If you are not in the area, please get in touch anyway; we service a global community of individuals and organizations and take pride in our ability to do so.</p>
+          <p><i class="icon-globe icon-2x pull-left"></i>We are located in Bethesda, MD, a suburb of Washington, DC USA. If you are in the area, please get in touch. If you are not in the area, please get in touch anyway; we service a global community of individuals and organizations and take pride in our ability to do so.</p>
           <p><a class="btn" href="/contact">View details &raquo;</a></p>
         </div>
         <div class="span4"> 
