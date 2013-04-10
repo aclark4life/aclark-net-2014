@@ -4,9 +4,9 @@
 <%block name="nav">
     <li><a href="/">Home</a></li>
     <li><a href="#">Projects</a></li>
-    <li class="active"><a href="/services">Services</a></li>
+    <li><a href="/services">Services</a></li>
     <li><a href="#">Downloads</a></li>
-    <li><a href="#">About</a></li>
+    <li class="active"><a href="/team">Team</a></li>
     <li><a href="/contact">Contact</a></li>
 </%block>
 
