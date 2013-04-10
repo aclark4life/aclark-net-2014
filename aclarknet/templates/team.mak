@@ -12,54 +12,134 @@
 
 
 <%block name="jumbotron">
-    <h1>Services</h1>
+    <h1>Team</h1>
+    <h2>We proudly work with a talented and diverse group of people from all over the global Python community.</h2>
 
     <div class="row-fluid">
         <span class="span12">
-            <h2>Consulting</h2>
-            <h3>Professional Consulting Services</h3>
-            <p class="lead"><i class="icon-lightbulb icon-2x pull-left"></i>ACLARK.NET, LLC's consulting services offer clients professional, subject matter expert-level evaluation of a current or proposed project, technical environment/infrastructure, and/or other website related challenges and issues. We then develop findings and offer conclusions and recommendations to clients to use for either current or future decision making purposes. Consulting services are flexible and designed to meet each and every client's particular needs and circumstances.</p>
+            <h2>Alex Clark</h2>
+            <h3>Founding Partner, Lead Developer, President</h3>
+            <p class="lead"><i class="icon-user icon-2x pull-left"></i>Alex Clark is Python Web Developer and Musician. He has a Bachelor of Science in Computer Science from Loyola University in Maryland and has worked professionally as a System Administrator, Network Engineer, and Software Engineer since 1996. He is also the president of DC Python, a non-profit organization focused on promoting Python software in DC. Read more about Alex here:</p>
+            <ul class="lead">
+                <li><a href="http://about.me/alex.clark">About</a></li>
+                <li><a href="http://blog.aclark.net">Blog</a></li>
+                <li><a href="http://alt.aclark.net">Music</a></li>
+                <li><a href="http://resume.aclark.net">Résumé</a></li>
+            </ul>
         </span>
     </div>
 
     <div class="row-fluid">
         <span class="span12">
-            <h2>Development</h2>
-            <h3>Python Web Development</h3>
-            <p class="lead"><i class="icon-cog icon-2x pull-left"></i>Our team excels in the complete implementation of custom Python software; from design and development, quality assurance testing and deployment, to further upgrades and enhancements, our team of experts can handle it all. Since a well-conceived design is fundamental to the success of any project, we provide consultation to assist our clients in selecting the right software by analyzing functional, technical, operational, and financial requirements. Any and all consulting projects begin with defining and understanding our clients’ business needs and issues. With careful attention to detail, we prepare a detailed statement of work containing all the requirements for your project. We maintain a standardized and refined software development process that provides a flexible and scalable framework for delivering projects--regardless of size or complexity--within the agreed upon time frame and budget specified by the client. We do so with the utmost quality, using “best of breed” practices to meet both current and future technological challenges of our customers. This methodology is applied to each and every project we undertake in order to ensure an outcome of both value and reliability to our clients.</p>
+Amy Clark
+Business Coordinator, Partner
+
+Amy Clark brings many years of professional sales, marketing, management, administrative and financial/legal experience to the ACLARK.NET, LLC team. She facilitates the smooth and uncomplicated engagement of our services and ensures the quality, accuracy and efficiency of all ACLARK.NET, LLC client accounts.
+
+    <div class="row-fluid">
+        <span class="span12">
+Tim Knapp
+Plone Consultant
+
+Tim Knapp has been an active member of the Plone community since 2006. He has worked on a variety of projects, and is comfortable with all aspects of Plone development including theming, feature additions, and test driven development.
+
         </span>
     </div>
 
     <div class="row-fluid">
         <span class="span12">
-            <h2>Hosting</h2>
-            <h3>Plone Website Hosting</h3>
-            <p class="lead"><i class="icon-home icon-2x pull-left"></i>All hosting services are not created equal. There are many provider options available and the costs for those services vary greatly. We recognize that it can be a daunting task to try to determine which hosting provider solution is the right one for your business. We want to make the decision understandable and easy. We educate clients on the fact that Python hosting requires experienced professionals with Python expertise to ensure the best result. We partner with leading cloud providers to provide the best combination of reliable infrastructure and personal care for our clients.</p>
+Rob Porter
+Plone Consultant
+
+Rob Porter is the author of several add-on packages for Plone including CSSManager, EasyAsPiIE, and ContentWellPortlets. He has spoken about theming at Plone Conferences and Symposiums and regularly teaches people how to program and deploy their Plone sites.
         </span>
     </div>
 
     <div class="row-fluid">
         <span class="span12">
-            <h2>Training</h2>
-            <h3>Python Developer Training</h3>
-            <p class="lead"><i class="icon-book icon-2x pull-left"></i>We believe training is of critical importance to the success of your project and we have the resources to provide you with quality training on a variety of subjects. Whether you are attempting to transition from one software package to another, or you are starting up a new professional venture, training sets the pace for a successful future. Upon the implementation and subsequent installation of your newly developed and customized Python software, you may wish to engage us in either training and/or support services. We are available and highly qualified to provide either or both in order make certain that the system our clients rely upon is one that they can use to its full potential and benefit. Our trainings are catered to fit your needs; please contact us today to schedule a session.</p>
+Steve Barber
+System Administrator
+
+Steve Barber has a Bachelor of Science in Computer Science; he has been a Computer Scientist at the National Institute of Standards and Technology (NIST) since 1995, where he provides infrastructure support for over 500 scientists performing various kinds of research.
         </span>
     </div>
 
     <div class="row-fluid">
         <span class="span12">
-            <h2 id="support">Support</h2>
-            <h3>Python Application Support</h3>
-            <p class="lead"><i class="icon-user icon-2x pull-left"></i>Our support plans allow us to provide comprehensive consulting, technical advice, strategic project planning, and technical support to our clients before, after and during the implementation of a software application and/or add-on we have developed, or for an existing Python web application. Our "Best Of Breed" approach will assist our clients in both the design and the implementation of the infrastructure necessary to ensure a system&apos;overall reliable performance. Our team’s experience, knowledge and expertise in effectively implementing Python software applications will position our clients for success in their field.</p>
+Andy McKay
+Django Consultant
+
+Andy McKay is a skilled web developer with excellent communication and project management skills.
+        </span>
+    </div>
+
+
+
+
+    <div class="row-fluid">
+        <span class="span12">
+Reed O&apos;Brien
+Python Consultant
+
+Reed O&apos;Brien is interested in solving interesting problems with Zope Toolkit, Plone, and Pyramid technologies. He enjoys engineering intelligent, extensible solutions. He is also very interested in the semantic web.
+        </span>
+    </div>
+
+
+    <div class="row-fluid">
+        <span class="span12">
+Matt Bowen
+Web Technologist
+
+Matt Bowen is an active contributor to the Plone community and is an experienced, highly-technical Plone integrator. He has been programming since the age of thirteen and is comfortable with modifying existing packages or writing new ones from scratch, to ensure your Plone site fits your vision. Additionally Matt has worked extensively with nonprofits, and has a particularly acute understanding of their unique needs and work style.
         </span>
     </div>
 
     <div class="row-fluid">
         <span class="span12">
-        <h2>Applications</h2>
-        <h3>Software As A Service Offering</h3>
-        <p class="lead"><i class="icon-magic icon-2x pull-left"></i>We have developed a web application to help Python programmers publish and promote their software easily through the web. It is tightly integrated with leading source code hosting websites, and facilitates a never-before-seen level of speed and ease in publishing.</p>
+Daniel Greenfeld
+Django Consultant
+
+Before 2005 Daniel Greenfeld was a software developer with over 10 years of experience in expensive solutions from Microsoft and Sun technologies. In 2005 he found himself working for NASA and diving headfirst into the open source world of Python, Django, Plone, and Zope. In 2010 he left NASA to co-found http://cartwheelweb.com, a Los Angeles firm primarily dedicated to open source advocacy and instruction.
         </span>
     </div>
+
+
+    <div class="row-fluid">
+        <span class="span12">
+Wendell Turner
+Python Consultant
+
+Wendell Turner has over 20 years experience in general software development, including initial concept, design, implementation, and deployment; experience in geographic information systems and NOAA weather products; extensive experience in Unix and Linux system administration; and experience in network protocol design and embedded systems development.
+        </span>
+    </div>
+
+    <div class="row-fluid">
+        <span class="span12">
+Rok Garbas
+Plone Consultant
+
+Rok Garbas is web developer currently based in Sevilla, Spain, with over 5 years of commercial experience. He specializes in building accessible websites using Zope, Plone, Grok, and Pyramid.
+        </span>
+    </div>
+
+
+    <div class="row-fluid">
+        <span class="span12">
+Larry Pitcher
+Plone Consultant
+
+Larry Pitcher has been active in the Plone community since 2004 and has built Plone sites for clients in the banking, non-profit, government, bio-tech, and small-business sectors. He also writes training materials for end-users of Plone sites. Larry has been programming and using computers since before the IBM PC was introduced. He worked as a COBOL programmer in the United States Air Force, and later got involved in Network Management, System Administration, Web Development, and Open Source Software.
+        </span>
+    </div>
+    <div class="row-fluid">
+        <span class="span12">
+Ken Cochrane
+Django Consultant
+
+Ken Cochrane is a software engineer with broad-based experience designing and implementing database-backed web applications, specializing in Python and Java.
+        </span>
+    </div>
+
 
 </%block>
