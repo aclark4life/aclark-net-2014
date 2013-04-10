@@ -18,30 +18,25 @@
         <span class="span12">
             <h2>Consulting</h2>
             <h3>Professional Consulting Services</h3>
-            <p class="lead">
-            <i class="icon-lightbulb icon-3x pull-left"></i>
-            ACLARK.NET, LLC's consulting services offer clients professional, subject matter expert-level evaluation of a current or proposed project, technical environment/infrastructure, and/or other website related challenges and issues. We then develop findings and offer conclusions and recommendations to clients to use for either current or future decision making purposes. Consulting services are flexible and designed to meet each and every client's particular needs and circumstances.</p>
+            <p class="lead"><i class="icon-lightbulb icon-2x pull-left"></i>ACLARK.NET, LLC's consulting services offer clients professional, subject matter expert-level evaluation of a current or proposed project, technical environment/infrastructure, and/or other website related challenges and issues. We then develop findings and offer conclusions and recommendations to clients to use for either current or future decision making purposes. Consulting services are flexible and designed to meet each and every client's particular needs and circumstances.</p>
         </span>
     </div>
 
     <div class="row-fluid">
-        <div class="span11">
+        <span class="span12">
             <h2>Development</h2>
             <h3>Python Web Development</h3>
-            <p class="lead">Our team excels in the complete implementation of custom Python software; from design and development, quality assurance testing and deployment, to further upgrades and enhancements, our team of experts can handle it all. Since a well-conceived design is fundamental to the success of any project, we provide consultation to assist our clients in selecting the right software by analyzing functional, technical, operational, and financial requirements. Any and all consulting projects begin with defining and understanding our clients’ business needs and issues. With careful attention to detail, we prepare a detailed statement of work containing all the requirements for your project. We maintain a standardized and refined software development process that provides a flexible and scalable framework for delivering projects--regardless of size or complexity--within the agreed upon time frame and budget specified by the client. We do so with the utmost quality, using “best of breed” practices to meet both current and future technological challenges of our customers. This methodology is applied to each and every project we undertake in order to ensure an outcome of both value and reliability to our clients.</p>
-        </div>
+            <p class="lead"><i class="icon-cog icon-2x pull-left"></i>Our team excels in the complete implementation of custom Python software; from design and development, quality assurance testing and deployment, to further upgrades and enhancements, our team of experts can handle it all. Since a well-conceived design is fundamental to the success of any project, we provide consultation to assist our clients in selecting the right software by analyzing functional, technical, operational, and financial requirements. Any and all consulting projects begin with defining and understanding our clients’ business needs and issues. With careful attention to detail, we prepare a detailed statement of work containing all the requirements for your project. We maintain a standardized and refined software development process that provides a flexible and scalable framework for delivering projects--regardless of size or complexity--within the agreed upon time frame and budget specified by the client. We do so with the utmost quality, using “best of breed” practices to meet both current and future technological challenges of our customers. This methodology is applied to each and every project we undertake in order to ensure an outcome of both value and reliability to our clients.</p>
+        </span>
     </div>
 
-We also pride ourselves on being good citizens of the open source community. You can see some of our work here.
-
-Hosting - Plone Website Hosting
-
-
-All hosting services are not created equal. There are many provider options available and the costs for those services vary greatly.
-
-We recognize that it can be a daunting task to try to determine which hosting provider solution is the right one for your business. We want to make the decision understandable and easy. We educate clients on the fact that Python hosting requires experienced professionals with Python expertise to ensure the best result.
-
-We partner with leading cloud providers to provide the best combination of reliable infrastructure and personal care for our clients.
+    <div class="row-fluid">
+        <span class="span12">
+            <h2>Hosting</h2>
+            <h3>Plone Website Hosting</h3>
+            <p class="lead"><i class="icon-home icon-2x pull-left"></i>All hosting services are not created equal. There are many provider options available and the costs for those services vary greatly. We recognize that it can be a daunting task to try to determine which hosting provider solution is the right one for your business. We want to make the decision understandable and easy. We educate clients on the fact that Python hosting requires experienced professionals with Python expertise to ensure the best result. We partner with leading cloud providers to provide the best combination of reliable infrastructure and personal care for our clients.</p>
+        </span>
+    </div>
 
 Training - Python Developer Training
 
@@ -63,7 +58,5 @@ Applications - Software As A Service Offering
 
 pyramid-medium.pngWe have developed a web application to help Python programmers publish and promote their software easily through the web. It is tightly integrated with leading source code hosting websites, and facilitates a never-before-seen level of speed and ease in publishing.
 
-
-    </div>
 
 </%block>
