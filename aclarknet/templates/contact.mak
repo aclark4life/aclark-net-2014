@@ -16,7 +16,7 @@
     <div class="row-fluid">
         <div class="span12">
             <p class="lead">
-            Rapidiously utilize high-payoff users without sustainable products. Enthusiastically morph cooperative networks vis-a-vis global action items. Synergistically disintermediate customized interfaces after e-business expertise. </p>
+<i class="icon-phone icon-2x pull-left"></i>Rapidiously utilize high-payoff users without sustainable products. Enthusiastically morph cooperative networks vis-a-vis global action items. Synergistically disintermediate customized interfaces after e-business expertise. </p>
 
             <p class="contact">
                 ACLARK.NET, LLC <br />

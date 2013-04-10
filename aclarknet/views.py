@@ -20,3 +20,9 @@ def root(request):
     """
     """
     return {}
+
+
+def services(request):
+    """
+    """
+    return {}
