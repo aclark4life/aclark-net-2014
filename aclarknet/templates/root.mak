@@ -146,7 +146,7 @@
       <%block name="jumbotron">
       <div class="jumbotron">
         <h1>We know Python.<br />We know open source.</h1>
-        <p class="lead">For instant ROI, and more: efficiently, effectively and economically create professional web services for your business with open source Python software.<br />We&apos;ll show you how&hellip;</p>
+        <p class="lead">Create professional web services for your business efficiently, effectively and economically with open source Python software. We&apos;ll show you how&hellip;</p>
 
         <a class="btn btn-large btn-success" href="/contact">Get started today</a>
       </div>
