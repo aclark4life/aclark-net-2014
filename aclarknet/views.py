@@ -1,3 +1,6 @@
+# XXX Some day, do something useful here e.g. CRUD content
+
+
 def about(request):
     """
     """
@@ -23,6 +26,12 @@ def root(request):
 
 
 def services(request):
+    """
+    """
+    return {}
+
+
+def team(request):
     """
     """
     return {}

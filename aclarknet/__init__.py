@@ -11,6 +11,7 @@ def main(global_config, **settings):
     config.add_route('contact', '/contact')
     config.add_route('projects', '/projects')
     config.add_route('services', '/services')
+    config.add_route('team', '/team')
     config.add_route('root', '/')
 
     config.add_static_view(
@@ -37,5 +38,10 @@ def main(global_config, **settings):
         'aclarknet.views.services',
         renderer='aclarknet:templates/services.mak',
         route_name='services')
+    config.add_view(
+        'aclarknet.views.team',
+        renderer='aclarknet:templates/team.mak',
+        route_name='team')
+
 
     return config.make_wsgi_app()
