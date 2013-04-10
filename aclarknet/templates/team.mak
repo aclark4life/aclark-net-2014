@@ -35,6 +35,8 @@ Amy Clark
 Business Coordinator, Partner
 
 Amy Clark brings many years of professional sales, marketing, management, administrative and financial/legal experience to the ACLARK.NET, LLC team. She facilitates the smooth and uncomplicated engagement of our services and ensures the quality, accuracy and efficiency of all ACLARK.NET, LLC client accounts.
+        </span>
+    </div>
 
     <div class="row-fluid">
         <span class="span12">
