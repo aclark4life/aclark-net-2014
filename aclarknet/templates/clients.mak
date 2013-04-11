@@ -1,6 +1,6 @@
 <%inherit file="root.mak"/>
 
-<%block name="head">
+<%block name="style">
     .row-fluid {
         border-radius: 0; 
     }
