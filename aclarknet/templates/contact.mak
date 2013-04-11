@@ -26,8 +26,7 @@
     <div class="row-fluid">
         <div class="span12">
             <p class="lead">
-<i class="icon-phone icon-2x pull-left"></i>Rapidiously utilize high-payoff users without sustainable products. Enthusiastically morph cooperative networks vis-a-vis global action items. Synergistically disintermediate customized interfaces after e-business expertise. </p>
-
+<i class="icon-phone icon-2x pull-left"></i>The Python programming language, and open source software in general, provide tremendous opportunities to businesses but often require an expert to take advantage of. We provide products and services that empower individuals and organizations to benefit from such opportunities. 
             <p class="contact">
                 ACLARK.NET, LLC <br />
                 Bethesda, MD USA <br />
