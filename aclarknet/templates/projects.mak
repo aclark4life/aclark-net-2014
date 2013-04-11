@@ -14,19 +14,9 @@
 </%block>
 
 <%block name="jumbotron">
-    <h1>Contact</h1>
-    <div class="row-fluid">
-        <div class="span12">
-            <p class="lead">
-            Rapidiously utilize high-payoff users without sustainable products. Enthusiastically morph cooperative networks vis-a-vis global action items. Synergistically disintermediate customized interfaces after e-business expertise. </p>
+    <h1>Projects</h1>
 
-            <p class="contact">
-                ACLARK.NET, LLC <br />
-                Bethesda, MD USA <br />
-                Email: <a href="mailto:info@aclark.net">info@aclark.net</a> <br />
-                Phone: 301-312-5236
-            </p>
+    <p class="lead">Rapidiously utilize high-payoff users without sustainable products. Enthusiastically morph cooperative networks vis-a-vis global action items. Synergistically disintermediate customized interfaces after e-business expertise. </p>
 
-        </div>
-    </div>
+    
 </%block>

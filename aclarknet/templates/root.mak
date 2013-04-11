@@ -181,7 +181,7 @@
 
       <div class="footer">
         <p class="pull-left">&copy; ACLARK.NET, LLC 2004-2013. All rights reserved.
-        <p class="pull-right">Made with Bootstrap and Pyramid. Icons by Font Awesome.</p>
+        <p class="pull-right">Made with Bootstrap and Pyramid. Icons by Font Awesome. Photo by Alex Clark.</p>
       </div>
 
     </div> <!-- /container -->

@@ -3,6 +3,7 @@
 <%block name="style">
     .footer {
         color: black;
+        margin-right: 11em;
     }
 </%block>
 
