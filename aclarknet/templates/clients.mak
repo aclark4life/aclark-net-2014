@@ -274,6 +274,13 @@
     </div>
     <div class="row-fluid">
         <span class="span12">
+        <h3>Theo Stamos</h3>
+        <h4>Democrat for Commonwealth&apos;s Attorney</h4>
+        <p class="lead"><i class="icon-building icon-2x pull-left"></i> Theo has been a prosecutor in the Commonwealth’s Attorney Office for Arlington County and the City of Falls Church for more than two decades. </p>
+        </span>
+    </div>
+    <div class="row-fluid">
+        <span class="span12">
         <h3>True Blade Systems</h3>
 
         <p class="lead"><i class="icon-suitcase icon-2x pull-left"></i>Founded in 2003, True Blade serves businesses, organizations and celebrity clients from their offices in Manhattan and suburban Washington, DC. True Blade Systems is particularly experienced in meeting the unique needs of domestic and international financial-services firms, including hedge funds, RIAs, broker-dealers and related businesses.</p>
