@@ -15,8 +15,11 @@
 
 <%block name="jumbotron">
     <h1>Projects</h1>
-    <h2>We enjoy projects that use the following Python-based technologies:</h2>
+    <h2>We especially enjoy projects that use the following Python-based technologies:</h2>
     <br />
     <img src="/static/plone-logo-256.png">
+    <br />
+    <br />
+    <img src="/static/Zope.png">
     
 </%block>
