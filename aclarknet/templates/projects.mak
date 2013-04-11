@@ -21,5 +21,11 @@
     <br />
     <br />
     <img src="/static/Zope.png">
+    <br />
+    <br />
+    <img src="/static/django-logo-positive.png">
+    <br />
+    <br />
+    <img src="/static/pyramid.png">
     
 </%block>
