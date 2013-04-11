@@ -10,13 +10,13 @@
     <li><a href="/services">Services</a></li>
     <li><a href="/team">Team</a></li>
     <li><a href="/testimonials">Testimonials</a></li>
-    <li class="active"><a href="/contact">Contact</a></li>
+    <li><a href="/contact">Contact</a></li>
 </%block>
 
 <%block name="jumbotron">
     <h1>Projects</h1>
-
-    <p class="lead">Rapidiously utilize high-payoff users without sustainable products. Enthusiastically morph cooperative networks vis-a-vis global action items. Synergistically disintermediate customized interfaces after e-business expertise. </p>
-
+    <h2>We enjoy projects that use the following technologies:</h2>
+    <br />
+    <img src="/static/plone-logo-256.png">
     
 </%block>

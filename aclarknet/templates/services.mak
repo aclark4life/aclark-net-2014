@@ -35,7 +35,7 @@
     <div class="row-fluid">
         <span class="span12">
             <h2>Hosting</h2>
-            <h3>Plone Website Hosting</h3>
+            <h3>Python Website Hosting</h3>
             <p class="lead"><i class="icon-home icon-2x pull-left"></i>All hosting services are not created equal. There are many provider options available and the costs for those services vary greatly. We recognize that it can be a daunting task to try to determine which hosting provider solution is the right one for your business. We want to make the decision understandable and easy. We educate clients on the fact that Python hosting requires experienced professionals with Python expertise to ensure the best result. We partner with leading cloud providers to provide the best combination of reliable infrastructure and personal care for our clients.</p>
         </span>
     </div>
