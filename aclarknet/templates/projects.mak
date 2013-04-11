@@ -1,5 +1,8 @@
 <%inherit file="root.mak"/>
 
+<%block name="title">
+    <title>ACLARK.NET, LLC &mdash; Projects</title>
+</%block>
 
 <%block name="nav">
     <li><a href="/">Home</a></li>
@@ -9,7 +12,6 @@
     <li><a href="/testimonials">Testimonials</a></li>
     <li class="active"><a href="/contact">Contact</a></li>
 </%block>
-
 
 <%block name="jumbotron">
     <h1>Contact</h1>

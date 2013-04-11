@@ -1,11 +1,13 @@
 <%inherit file="root.mak"/>
 
-<%block name="head">
-    <script>
+<%block name="style">
     .footer {
         color: black;
     }
-    </script>
+</%block>
+
+<%block name="title">
+    <title>ACLARK.NET, LLC &mdash; Contact</title>
 </%block>
 
 <%block name="nav">

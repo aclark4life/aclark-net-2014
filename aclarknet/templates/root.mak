@@ -2,7 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Template &middot; Bootstrap</title>
+    <%block name="title">
+    <title>ACLARK.NET, LLC &mdash; Home</title>
+    </%block>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -95,6 +97,8 @@
       .footer {
         color: #f9f9f9;
       }
+      <%block name="style">
+      </%block>
     </style>
     <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -109,8 +113,6 @@
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
                     <link rel="apple-touch-icon-precomposed" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
                                    <link rel="shortcut icon" href="/static/favicon.ico">
-    <%block name="head">
-    </%block>
 
   </head>
 
