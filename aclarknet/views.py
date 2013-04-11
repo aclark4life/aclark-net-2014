@@ -7,6 +7,12 @@ def about(request):
     return {}
 
 
+def clients(request):
+    """
+    """
+    return {}
+
+
 def contact(request):
     """
     """
@@ -26,6 +32,12 @@ def root(request):
 
 
 def services(request):
+    """
+    """
+    return {}
+
+
+def testimonials(request):
     """
     """
     return {}

@@ -23,6 +23,10 @@ def main(global_config, **settings):
         renderer='aclarknet:templates/about.mak',
         route_name='about')
     config.add_view(
+        'aclarknet.views.clients',
+        renderer='aclarknet:templates/clients.mak',
+        route_name='clients')
+    config.add_view(
         'aclarknet.views.contact',
         renderer='aclarknet:templates/contact.mak',
         route_name='contact')
@@ -38,6 +42,10 @@ def main(global_config, **settings):
         'aclarknet.views.services',
         renderer='aclarknet:templates/services.mak',
         route_name='services')
+    config.add_view(
+        'aclarknet.views.testimonials',
+        renderer='aclarknet:templates/testimonials.mak',
+        route_name='testimonials')
     config.add_view(
         'aclarknet.views.team',
         renderer='aclarknet:templates/team.mak',
