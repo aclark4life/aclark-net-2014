@@ -58,7 +58,6 @@
         margin-top: 28px;
       }
 
-
       /* Customize the navbar links to be fill the entire space of the .navbar */
       .navbar .navbar-inner {
         padding: 0;
@@ -154,7 +153,6 @@
         <a class="btn btn-large btn-success" href="/contact">Get started today</a>
       </div>
 
-
       <hr>
 
       <!-- Example row of columns -->
@@ -187,6 +185,7 @@
         <br />
         <br />
         <br />
+
         <p style="text-align: center">
 
 <a href="https://twitter.com/aclarknet" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @aclarknet</a>
@@ -195,7 +194,6 @@
         </p>
 
       </div>
-
 
     </div> <!-- /container -->
 
@@ -218,4 +216,3 @@
 
   </body>
 </html>
-
