@@ -1,4 +1,5 @@
-# XXX Some day, do something useful here e.g. CRUD content
+# XXX Some day, do something useful here. E.g. enable some CRUD functionality
+# for the website content, just like a real CMS! ;-)
 
 
 def about(request):
