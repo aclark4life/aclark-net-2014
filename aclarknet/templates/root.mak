@@ -180,7 +180,8 @@
       <hr>
 
       <div class="footer">
-        <p>&copy; ACLARK.NET, LLC 2004-2013. All rights reserved.</p>
+        <p class="pull-left">&copy; ACLARK.NET, LLC 2004-2013. All rights reserved.
+        <p class="pull-right">Made with Bootstrap and Pyramid. Icons by Font Awesome.</p>
       </div>
 
     </div> <!-- /container -->
