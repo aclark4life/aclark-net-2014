@@ -60,7 +60,7 @@
         <span class="span12">
         <h2>Applications</h2>
         <h3>Software As A Service Offering</h3>
-        <p class="lead"><i class="icon-magic icon-2x pull-left"></i>We have developed a web application to help Python programmers publish and promote their software easily through the web. It is tightly integrated with leading source code hosting websites, and facilitates a never-before-seen level of speed and ease in publishing.</p>
+        <p class="lead"><i class="icon-magic icon-2x pull-left"></i>We have developed a <a href="http://pythonpackages.com">web application</a> to help Python programmers publish and promote their software easily through the web. It is tightly integrated with leading source code hosting websites, and facilitates a never-before-seen level of speed and ease in publishing.</p>
         </span>
     </div>
 
