@@ -171,7 +171,7 @@
         </div>
         <div class="span4">
           <h2>Location</h2>
-          <p><i class="icon-globe icon-2x pull-left"></i>We are located in Bethesda, MD, a suburb of Washington, DC, USA. We service a global community of individuals and organizations and are always eager and available to help with your Python-based projects.</p>
+          <p><i class="icon-globe icon-2x pull-left"></i>We are located in Bethesda, MD, a suburb of Washington, DC, USA. We service a global community of individuals and organizations and are always eager and available to help.</p>
           <p><a class="btn" href="/contact">View details &raquo;</a></p>
         </div>
       </div>
