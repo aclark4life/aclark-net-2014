@@ -12,7 +12,8 @@
 <%block name="jumbotron">
 
     <h1>Testimonials</h1>
-    <h2>A select list of endorsements from some of our many happy clients.</h2>
+
+    <h3>A select list of endorsements from some of our many happy clients.</h3>
 
     <div class="row-fluid">
         <span class="span12">

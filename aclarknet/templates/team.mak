@@ -13,7 +13,7 @@
 
 <%block name="jumbotron">
     <h1>Team</h1>
-    <h2>We proudly work with a talented and diverse group of people from all over the world.</h2>
+    <h3>We proudly work with a talented and diverse group of people from all over the world.</h3>
 
     <div class="row-fluid">
         <span class="span12">

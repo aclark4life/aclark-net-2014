@@ -1,5 +1,13 @@
 <%inherit file="root.mak"/>
 
+<%block name="head">
+    <style>
+    .row-fluid {
+        border-radius: 0; 
+    }
+    </style>
+</%block>
+
 <%block name="nav">
     <li><a href="/">Home</a></li>
     <li class="active"><a href="/clients">Clients</a></li>
@@ -12,274 +20,262 @@
 <%block name="jumbotron">
 
     <h1>Clients</h1>
-    <h2>A partial list of valued clients from the Education, Government, Non-Profit, and Technology sectors.</h2>
+
+    <h3>A partial list of valued clients from the Education, Government, Non-Profit, and Technology sectors.</h3>
 
     <div class="row-fluid">
         <span class="span12">
 
-Alexandria Consulting LLC
+        <h3>Alexandria Consulting LLC</h3>
 
-A company inspired by ancient Alexandria, providing open source software, data integration, HIPAA, NIEM, and Sarbanes-Oxley solutions.
+        <p class="lead">A company inspired by ancient Alexandria, providing open source software, data integration, HIPAA, NIEM, and Sarbanes-Oxley solutions.</p>
 
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
+        <h3>Amtrak</h3>
 
-Amaze Solutions
-
-Amaze offers professional solutions for information and knowledge management that are based on powerful Open Source applications.
+        <p class="lead">Amtrak is a government-owned corporation striving to deliver a high quality, safe, on-time rail passenger service that exceeds customer expectations.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-Amtrak
+        <h3>Antimicrobial Therapy, Inc.</h3>
 
-Amtrak is a government-owned corporation striving to deliver a high quality, safe, on-time rail passenger service that exceeds customer expectations.
+        <p class="lead">Antimicrobial Therapy, Inc., publisher of the Sanford Guides, has been owned and operated by the Sanford family since 1969.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-Antimicrobial Therapy, Inc.
+        <h3>Appropriate Solutions, Inc.</h3>
 
-Antimicrobial Therapy, Inc., publisher of the Sanford Guides, has been owned and operated by the Sanford family since 1969.
+        <p class="lead">Appropriate Solutions, Inc. provides custom software development services for desktop, client-server, and web applications. Our professional and experienced in-house development team works with local writers, graphic artists, and web designers to transform your basic ideas and sketches into ready-for-market product.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-Appropriate Solutions, Inc.
+        <h3>Arizona State University</h3>
 
-Appropriate Solutions, Inc. provides custom software development services for desktop, client-server, and web applications. Our professional and experienced in-house development team works with local writers, graphic artists, and web designers to transform your basic ideas and sketches into ready-for-market product.
+        <p class="lead">College of Public Programs</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-Arizona State University
+        <h3>Campaign for the Civic Mission of Schools</h3>
 
-College of Public Programs
+        <p class="lead">The Campaign for the Civic Mission of Schools is a coalition of 40 organizations committed to improving the quality and quantity of civic learning in American schools.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-Campaign for the Civic Mission of Schools
+        <h3>Chris Zimmerman</h3>
+        <h4>Arlington County Board</h4>
 
-The Campaign for the Civic Mission of Schools is a coalition of 40 organizations committed to improving the quality and quantity of civic learning in American schools.
+        <p class="lead">Chris Zimmerman was first elected to the Arlington County Board in January 1996, winning a special election to succeed Mary Margaret Whipple following her election to the Virginia Senate. He was subsequently re-elected in 1998, 2002, 2006, and 2010. Chris has served as Board Chairman four times: in 1998, 2002, 2006, and 2011.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-Chris Zimmerman
-Arlington County Board
+        <h3>Contextual</h3>
 
-Chris Zimmerman was first elected to the Arlington County Board in January 1996, winning a special election to succeed Mary Margaret Whipple following her election to the Virginia Senate. He was subsequently re-elected in 1998, 2002, 2006, and 2010. Chris has served as Board Chairman four times: in 1998, 2002, 2006, and 2011.
+        <p class="lead">The open source CMS specialists at Contextual provide content management solutions to empower your content and your organization.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-Contextual
+        <h3>Cooperative Coffees</h3>
 
-The open source CMS specialists at Contextual provide content management solutions to empower your content and your organization.
+        <p class="lead">Cooperative Coffees is a green coffee importing cooperative, comprised of 23 community-based coffee roasters in the USA and Canada, who are committed to building and supporting fair and sustainable trade relationships for the benefit of farmers and their exporting cooperatives, families, and communities.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-Cooperative Coffees
+        <h3>Customer Value Partners</h3>
 
-Cooperative Coffees is a green coffee importing cooperative, comprised of 23 community-based coffee roasters in the USA and Canada, who are committed to building and supporting fair and sustainable trade relationships for the benefit of farmers and their exporting cooperatives, families, and communities.
+        <p class="lead">Customer Value Partners is an award-winning business and IT consultancy that collaborates with Fortune 500 and public sector clients to accelerate their business performance. We employ Voice-of-Customer based methods to solve performance challenges in the areas of Customer Life-Cycle Management, IT Functional Effectiveness, Program Performance Management, and Emerging Technologies. Formed in 2002, our firm is based in the Washington, DC metro area with operations in Baltimore, MD, Boston, MA, Jackson, MS, Nashville, TN, and Harrisburg, PA.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-Customer Value Partners
+        <h3>Decernis</h3>
 
-Customer Value Partners is an award-winning business and IT consultancy that collaborates with Fortune 500 and public sector clients to accelerate their business performance. We employ Voice-of-Customer based methods to solve performance challenges in the areas of Customer Life-Cycle Management, IT Functional Effectiveness, Program Performance Management, and Emerging Technologies. Formed in 2002, our firm is based in the Washington, DC metro area with operations in Baltimore, MD, Boston, MA, Jackson, MS, Nashville, TN, and Harrisburg, PA.
+        <p class="lead">Decernis provides research, content, and information systems to manage the global compliance of products in the areas of food, consumer, and industrial product safety.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-Decernis
+        <h3>Department of Energy</h3>
 
-Decernis provides research, content, and information systems to manage the global compliance of products in the areas of food, consumer, and industrial product safety.
+        <p class="lead">Governmental department whose mission is to advance energy technology and promote related innovation in the United States.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-Department of Energy
+        <h3>Dumbarton Oaks</h3>
 
-Governmental department whose mission is to advance energy technology and promote related innovation in the United States.
+        <p class="lead">Dumbarton Oaks Research Library and Collection, in Washington, DC, is an institute of Harvard University dedicated to supporting scholarship internationally in Byzantine, Garden and Landscape, and Pre-Columbian studies through fellowships, meetings, exhibitions, and publications.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-Dumbarton Oaks
+        <h3>USAID</h3>
 
-Dumbarton Oaks Research Library and Collection, in Washington, DC, is an institute of Harvard University dedicated to supporting scholarship internationally in Byzantine, Garden and Landscape, and Pre-Columbian studies through fellowships, meetings, exhibitions, and publications.
+        <p class="lead">USAID is an independent federal government agency that receives overall foreign policy guidance from the Secretary of State.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-USAID
+        <h3>Food and Water Watch</h3>
 
-USAID is an independent federal government agency that receives overall foreign policy guidance from the Secretary of State.
+        <p class="lead">Food & Water Watch works to ensure the food, water and fish we consume is safe, accessible and sustainable.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-Food and Water Watch
+        <h3>Forum of ESRD Networks</h3>
 
-Food & Water Watch works to ensure the food, water and fish we consume is safe, accessible and sustainable.
+        <p class="lead">The Forum of ESRD Networks is a not-for-profit organization that advocates on behalf of its membership and coordinates projects and activities of mutual interests to ESRD Networks.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-Forum of ESRD Networks
+        <h3>George Washington University Gelman Library</h3>
 
-The Forum of ESRD Networks is a not-for-profit organization that advocates on behalf of its membership and coordinates projects and activities of mutual interests to ESRD Networks.
+        <p class="lead">The Mission of the George Washington University Libraries is to enable GW faculty and students, regardless of location, to meet their curricular, research and information needs.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-George Washington University Gelman Library
+        <h3>Isotoma</h3>
 
-The Mission of the George Washington University Libraries is to enable GW faculty and students, regardless of location, to meet their curricular, research and information needs.
+        <p class="lead">Isotoma is a software consultancy building bespoke web, mobile and online applications.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-Isotoma
+        <h3>Jazkarta</h3>
 
-Isotoma is a software consultancy building bespoke web, mobile and online applications.
+        <p class="lead">Jazkarta creates websites and web applications with open source software.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-Jazkarta
+        <h3>Kalsec</h3>
 
-Jazkarta creates websites and web applications with open source software.
+        <p class="lead">Kalsec produces Natural Colors, Flavor Extracts, Antioxidants, Hop Extracts and Nutritional Ingredients for the food, beverage, and pharmaceutical industries.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-Kalsec
+        <h3>Land Trust Alliance</h3>
 
-Kalsec produces Natural Colors, Flavor Extracts, Antioxidants, Hop Extracts and Nutritional Ingredients for the food, beverage, and pharmaceutical industries.
+        <p class="lead">The Land Trust Alliance promotes voluntary private land conservation to benefit communities and natural systems. They are the national convener, strategist and representative of more than 1,700 land trusts across America.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-Land Trust Alliance
+        <h3>London Internet Exchange</h3>
 
-The Land Trust Alliance promotes voluntary private land conservation to benefit communities and natural systems. They are the national convener, strategist and representative of more than 1,700 land trusts across America.
+        <p class="lead">The London Internet Exchange (LINX) is one of the global leaders of Internet Exchange Points (IXP). Our company ethos and aspirations result in constant growth and improvement in our services. As a result, members have access to the most attractive peers at the lowest cost.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-London Internet Exchange
+        <h3>NASA Science Mission Directorate</h3>
 
-The London Internet Exchange (LINX) is one of the global leaders of Internet Exchange Points (IXP). Our company ethos and aspirations result in constant growth and improvement in our services. As a result, members have access to the most attractive peers at the lowest cost.
+        <p class="lead">The Science Mission Directorate (SMD) engages the Nation’s science community, sponsors scientific research, and develops and deploys satellites and probes in collaboration with NASA’s partners around the world to answer fundamental questions requiring the view from and into space. SMD seeks to understand the origins, evolution, and destiny of the universe and to understand the nature of the strange phenomena that shape it.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-NASA Science Mission Directorate
+        <h3>National Crime Prevention Council</h3>
 
-The Science Mission Directorate (SMD) engages the Nation’s science community, sponsors scientific research, and develops and deploys satellites and probes in collaboration with NASA’s partners around the world to answer fundamental questions requiring the view from and into space. SMD seeks to understand the origins, evolution, and destiny of the universe and to understand the nature of the strange phenomena that shape it.
+        <p class="lead">The National Crime Prevention Council’s mission is to be the nation&apos;s leader in helping people keep themselves, their families, and their communities safe from crime.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-National Crime Prevention Council
+        <h3>Nature Conservancy</h3>
 
-The National Crime Prevention Council’s mission is to be the nation&apos;s leader in helping people keep themselves, their families, and their communities safe from crime.
+        <p class="lead">The Nature Conservancy is the leading conservation organization working around the world to protect ecologically important lands and waters for nature and people.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-Nature Conservancy
+        <h3>Navy International Programs Office</h3>
 
-The Nature Conservancy is the leading conservation organization working around the world to protect ecologically important lands and waters for nature and people.
+        <p class="lead">The Navy International Programs Office (Navy IPO) manages and implements International Security Assistance programs, Cooperative Development programs, and Technology Security policy.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-Navy International Programs Office
+        <h3>National Geographic</h3>
 
-The Navy International Programs Office (Navy IPO) manages and implements International Security Assistance programs, Cooperative Development programs, and Technology Security policy.
+        <p class="lead">The National Geographic Society has been inspiring people to care about the planet since 1888.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-National Geographic
+        <h3>PBS</h3>
 
-The National Geographic Society has been inspiring people to care about the planet since 1888.
+        <p class="lead">PBS and their member stations are America’s largest classroom, the nation&apos;s largest stage for the arts and a trusted window to the world. In addition, PBS&apos;s educational media helps prepare children for success in school and opens up the world to them in an age-appropriate way.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-PBS
+        <h3>Phoenix Technologies</h3>
 
-PBS and their member stations are America’s largest classroom, the nation&apos;s largest stage for the arts and a trusted window to the world. In addition, PBS&apos;s educational media helps prepare children for success in school and opens up the world to them in an age-appropriate way.
-        </span>
-    </div>
-Phoenix Technologies
-
-Since the dawn of the personal computer age, Phoenix has been at the forefront of innovation - literally bringing the core elements of PCs together and making them work together.
+        <p class="lead">Since the dawn of the personal computer age, Phoenix has been at the forefront of innovation - literally bringing the core elements of PCs together and making them work together.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-Radio Free Asia
+        <h3>Radio Free Asia</h3>
 
-Radio Free Asia&apos;s mission is to provide accurate and timely news and information to Asian countries whose governments prohibit access to a free press.
+        <p class="lead">Radio Free Asia&apos;s mission is to provide accurate and timely news and information to Asian countries whose governments prohibit access to a free press.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-Six Feet Up
+        <h3>Six Feet Up</h3>
 
-Six Feet Up, Inc. was founded in San Francisco, California in 1999 as a privately-held WBE-certified woman-owned company that develops custom open source web applications to help manage business online.
+        <p class="lead">Six Feet Up, Inc. was founded in San Francisco, California in 1999 as a privately-held WBE-certified woman-owned company that develops custom open source web applications to help manage business online.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-SocialCode
+        <h3>SocialCode</h3>
 
-SocialCode, a Washington Post Company, unlocks the power of Facebook and helps brands to gather, engage, incentivize, and understand Facebook users.
+        <p class="lead">SocialCode, a Washington Post Company, unlocks the power of Facebook and helps brands to gather, engage, incentivize, and understand Facebook users.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-System for Basic Adult Education Support
+        <h3>System for Basic Adult Education Support</h3>
 
-The System for Basic Adult Education Support (SABES) promotes high quality adult basic education services through training, support, and resources that improve the skills and knowledge of practitioners and strengthen programs.
+        <p class="lead">The System for Basic Adult Education Support (SABES) promotes high quality adult basic education services through training, support, and resources that improve the skills and knowledge of practitioners and strengthen programs.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-True Blade Systems
+        <h3>True Blade Systems</h3>
 
-Founded in 2003, True Blade serves businesses, organizations and celebrity clients from their offices in Manhattan and suburban Washington, DC. True Blade Systems is particularly experienced in meeting the unique needs of domestic and international financial-services firms, including hedge funds, RIAs, broker-dealers and related businesses.
+        <p class="lead">Founded in 2003, True Blade serves businesses, organizations and celebrity clients from their offices in Manhattan and suburban Washington, DC. True Blade Systems is particularly experienced in meeting the unique needs of domestic and international financial-services firms, including hedge funds, RIAs, broker-dealers and related businesses.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-University of North Carolina at Chapel Hill
+        <h3>University of North Carolina at Chapel Hill</h3>
 
-The University of North Carolina at Chapel Hill is a coeducational public research university located in Chapel Hill, North Carolina, United States.
+        <p class="lead">The University of North Carolina at Chapel Hill is a coeducational public research university located in Chapel Hill, North Carolina, United States.</p>
         </span>
     </div>
     <div class="row-fluid">
         <span class="span12">
-Web Collective
+        <h3>Web Development Group</h3>
 
-Web Collective helps forward-thinking organizations achieve their sustainability missions by creating services that deepen audience engagement.
-        </span>
-    </div>
-    <div class="row-fluid">
-        <span class="span12">
-Web Development Group
-
-A full service interactive agency near DC comprised of a close knit community of designers, web developers and strategists.
+        <p class="lead">A full service interactive agency near DC comprised of a close knit community of designers, web developers and strategists.</p>
 
         </span>
     </div>
