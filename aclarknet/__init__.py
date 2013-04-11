@@ -53,5 +53,4 @@ def main(global_config, **settings):
         renderer='aclarknet:templates/team.mak',
         route_name='team')
 
-
     return config.make_wsgi_app()
