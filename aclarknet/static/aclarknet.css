@@ -9,7 +9,9 @@
 }
 
 .contact {
-    font-family: 'Rough Typewriter';
+
+/* Typewriter font didn't make it past marketing :-( */
+/*    font-family: 'Rough Typewriter'; */
     font-size: 250%;
     line-height: 40px;
     margin: 1em 0 1em 7.1em;
