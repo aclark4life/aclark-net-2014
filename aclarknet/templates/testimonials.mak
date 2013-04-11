@@ -46,14 +46,14 @@
 
     <div class="row-fluid">
         <span class="span12">
-            <h3><i class="icon-user"></i>Eric Jahn, President, Alexandria Consulting</h3>
+            <h3><i class="icon-user"></i> Eric Jahn, President, Alexandria Consulting</h3>
             <p class="quote">12/12/2012<br /><br />Alex helped free my Plone website from the clutches of an unwanted add-on that had rendered it useless.  He quickly analyzed and corrected the problem without unnecessary procedures and contract terms.</p>
         </span>
     </div>
 
     <div class="row-fluid">
         <span class="span12">
-            <h3><i class="icon-user"></i>Kimberly Seese, Communications Specialist at Land Trust Alliance</h3>
+            <h3><i class="icon-user"></i> Kimberly Seese, Communications Specialist at Land Trust Alliance</h3>
             <p class="quote">01/12/2013<br /><br />Alex and his company successfully bid to perform enhancements to the Land Trust Alliance website in July 2011 and have been doing routine development and maintenance ever since. We are very happy with their performance, and the performance of our site!</p>
         </span>
     </div>
