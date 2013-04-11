@@ -148,7 +148,6 @@
 
         <a class="btn btn-large btn-success" href="/contact">Get started today</a>
       </div>
-      </%block>
 
 
       <hr>
@@ -171,6 +170,7 @@
           <p><a class="btn" href="/contact">View details &raquo;</a></p>
         </div>
       </div>
+      </%block>
 
       <hr>
 
