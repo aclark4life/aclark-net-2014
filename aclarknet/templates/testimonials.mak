@@ -11,23 +11,37 @@
 
 <%block name="jumbotron">
 
- A select list of endorsements from our clients
-Thomas Golden
-System Engineer, Antimicrobial Therapy, Inc.
+    <h1>Testimonials</h1>
+    <h2>A select list of endorsements from some of our many happy clients.</h2>
 
+    <div class="row-fluid">
+        <span class="span12">
+
+        <h2>Thomas Golden</h2>
+        <h3>System Engineer, Antimicrobial Therapy, Inc.</h3>
+
+        <pre>
     6/18/2010
 
     Hello Alex,
 
     Wanted to thank you for an excellent class at Penn State and look forward to further classes in the future.
     … you are one of the best instructors I ever meet when it comes to the Plone CMS.
+        </pre>
 
-Michael G. Rozman
-Visiting Research Associate, Department of Physics, University of Connecticut
+        </span>
+    </div>
 
+    <div class="row-fluid">
+        <span class="span12">
+        <h2>Michael G. Rozman</h2>
+        <h3>Visiting Research Associate, Department of Physics, University of Connecticut</h3>
+
+    <pre>
     1/21/2011
 
     Thank you (among other things) for 'Plone 3.3 site administration'. Hopefully you&apos;ll publish 'Plone 4 administration' some day ...
+    </pre>
 
 Lou Wollrab
 Information Coordinator, System for Adult Basic Education Support, World Education
@@ -56,6 +70,9 @@ Communications Specialist at Land Trust Alliance
     01/12/2013
 
     Alex and his company successfully bid to perform enhancements to the Land Trust Alliance website in July 2011 and have been doing routine development and maintenance ever since. We are very happy with their performance, and the performance of our site!
+
+        </span>
+    </div>
 
 
 </%block>

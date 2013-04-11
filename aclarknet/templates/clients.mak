@@ -11,6 +11,9 @@
 
 <%block name="jumbotron">
 
+    <div class="row-fluid">
+        <span class="span12">
+
 A partial list of valued clients from the Education, Government, Non-Profit, and Technology sectors.
 Alexandria Consulting LLC
 
@@ -127,5 +130,8 @@ Web Collective helps forward-thinking organizations achieve their sustainability
 Web Development Group
 
 A full service interactive agency near DC comprised of a close knit community of designers, web developers and strategists.
+
+        </span>
+    </div>
 
 </%block>

@@ -1,5 +1,14 @@
 <%inherit file="root.mak"/>
 
+<%block name="head">
+    <style>
+
+    .footer {
+        color: black;
+    }
+
+    </style>
+</%block>
 
 <%block name="nav">
     <li><a href="/">Home</a></li>
