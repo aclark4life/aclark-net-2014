@@ -9,6 +9,6 @@ setup(
         'pyramid',
         'waitress',
     ],
-    name='aclarknet', 
+    name='aclarknet',
     packages=find_packages(),
 )
