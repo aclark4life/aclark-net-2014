@@ -1,17 +1,9 @@
-@font-face {
-  font-family: "Rough Typewriter";
-  src: url(/static/rough_typewriter.otf) format('opentype');
-}
-
 .muted a {
     color: #999999;
     text-decoration: none;
 }
 
 .contact {
-
-/* Typewriter font didn't make it past marketing :-( */
-/*    font-family: 'Rough Typewriter'; */
     font-weight: bold;
     font-size: 250%;
     line-height: 40px;
