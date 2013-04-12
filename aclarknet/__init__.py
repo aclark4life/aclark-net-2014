@@ -70,7 +70,7 @@ def main(global_config, **settings):
     config = Configurator()
 
     # Redirs
-    config.add_route('blog_entry', '/blog{entry}')
+    config.add_route('blog_entry', '/blog/{entry}')
     config.add_route('blog', '/blog')
 
     # Everything else
