@@ -1,5 +1,6 @@
 # XXX Why am I putting code in __init__.py?
 from pyramid.config import Configurator
+from pyramid.httpexceptions import HTTPMovedPermanently
 
 
 # XXX Some day, do something useful here. E.g. enable some CRUD functionality
@@ -8,6 +9,14 @@ def clients(request):
     """
     """
     return {}
+
+
+def blog(request):
+    """
+    Handle blog move from aclark.net/blog to blog.aclark.net
+    """
+    return HTTPMovedPermanently(location="http://%s%s" % (
+        'blog.aclark.net', request.path_qs.replace('/blog', '')))
 
 
 def contact(request):
@@ -51,6 +60,7 @@ def main(global_config, **settings):
     """
     config = Configurator()
 
+    config.add_route('blog', '/blog')
     config.add_route('contact', '/contact')
     config.add_route('clients', '/clients')
     config.add_route('projects', '/projects')
@@ -63,6 +73,9 @@ def main(global_config, **settings):
         'static', 'aclarknet:static', cache_max_age=3600)
 
     # XXX Consider using view decorator instead
+    config.add_view(
+        blog,
+        route_name='blog')
     config.add_view(
         clients,
         renderer='aclarknet:templates/clients.mak',
