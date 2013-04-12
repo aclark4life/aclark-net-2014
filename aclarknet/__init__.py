@@ -4,12 +4,6 @@ from pyramid.config import Configurator
 
 # XXX Some day, do something useful here. E.g. enable some CRUD functionality
 # for the website content just like a CMS! ;-)
-def about(request):
-    """
-    """
-    return {}
-
-
 def clients(request):
     """
     """
@@ -57,7 +51,6 @@ def main(global_config, **settings):
     """
     config = Configurator()
 
-    config.add_route('about', '/about')
     config.add_route('contact', '/contact')
     config.add_route('clients', '/clients')
     config.add_route('projects', '/projects')
