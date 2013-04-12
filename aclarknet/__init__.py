@@ -15,7 +15,6 @@ def blog(request):
     """
     Handle blog move from aclark.net/blog to blog.aclark.net
     """
-    import pdb ; pdb.set_trace()
     return HTTPMovedPermanently(location="http://%s%s" % (
         'blog.aclark.net', request.path_qs.replace('/blog', '')))
 
@@ -24,7 +23,6 @@ def blog_entry(request):
     """
     Handle blog move from aclark.net/blog to blog.aclark.net
     """
-    import pdb ; pdb.set_trace()
     entry = request.matchdict['entry']
     return HTTPMovedPermanently(location="http://%s%s" % (
         'blog.aclark.net', request.path_qs.replace('/blog', '') + entry))
@@ -72,7 +70,7 @@ def main(global_config, **settings):
     config = Configurator()
 
     # Redirs
-    config.add_route('blog_entry', '/blog/{entry}')
+    config.add_route('blog_entry', '/blog{entry}')
     config.add_route('blog', '/blog')
 
     # Everything else
@@ -91,6 +89,9 @@ def main(global_config, **settings):
     config.add_view(
         blog,
         route_name='blog')
+    config.add_view(
+        blog_entry,
+        route_name='blog_entry')
     config.add_view(
         clients,
         renderer='aclarknet:templates/clients.mak',
