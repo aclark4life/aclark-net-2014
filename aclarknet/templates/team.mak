@@ -134,7 +134,7 @@
         <span class="span12">
             <h2>Ken Cochrane</h2>
             <h3>Django Consultant</h3>
-            <h4>Portland, Maine</h4>
+            <h4>Portland, MN USA</h4>
             <p class="lead"><i class="icon-user icon-2x pull-left"></i>Ken Cochrane is a software engineer with broad-based experience designing and implementing database-backed web applications, specializing in Python and Java.</p>
         </span>
     </div>
