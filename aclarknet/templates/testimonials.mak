@@ -2,7 +2,7 @@
 
 <%block name="style">
     .row-fluid {
-        margin: 2em 0 2em 0;
+        margin: 0 0 4em 0;
     }
 </%block>
 
@@ -20,10 +20,8 @@
 </%block>
 
 <%block name="jumbotron">
-
     <h1>Testimonials</h1>
-    <h3>A select list of endorsements from our many happy clients.</h3>
-
+    <h2>A select list of endorsements from our many happy clients.</h2>
     <div class="row-fluid">
         <span class="span12">
             <h3><i class="icon-user"></i> Thomas Golden, System Engineer, Antimicrobial Therapy, Inc.</h3>

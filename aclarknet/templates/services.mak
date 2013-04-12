@@ -21,7 +21,7 @@
 
 <%block name="jumbotron">
     <h1>Services</h1>
-
+    <h2>We provide a variety of services related to Python software development, deployment, maintenance and education.</h2>
     <div class="row-fluid">
         <span class="span12">
             <h2>Consulting</h2>
