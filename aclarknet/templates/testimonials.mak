@@ -2,7 +2,7 @@
 
 <%block name="style">
     .row-fluid {
-        border-radius: 0;
+        margin: 2em 0 2em 0;
     }
 </%block>
 
