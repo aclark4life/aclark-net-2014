@@ -15,8 +15,19 @@ def blog(request):
     """
     Handle blog move from aclark.net/blog to blog.aclark.net
     """
+    import pdb ; pdb.set_trace()
     return HTTPMovedPermanently(location="http://%s%s" % (
         'blog.aclark.net', request.path_qs.replace('/blog', '')))
+
+
+def blog_entry(request):
+    """
+    Handle blog move from aclark.net/blog to blog.aclark.net
+    """
+    import pdb ; pdb.set_trace()
+    entry = request.matchdict['entry']
+    return HTTPMovedPermanently(location="http://%s%s" % (
+        'blog.aclark.net', request.path_qs.replace('/blog', '') + entry))
 
 
 def contact(request):
@@ -60,7 +71,11 @@ def main(global_config, **settings):
     """
     config = Configurator()
 
+    # Redirs
+    config.add_route('blog_entry', '/blog/{entry}')
     config.add_route('blog', '/blog')
+
+    # Everything else
     config.add_route('contact', '/contact')
     config.add_route('clients', '/clients')
     config.add_route('projects', '/projects')
