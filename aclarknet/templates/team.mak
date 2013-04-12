@@ -1,5 +1,11 @@
 <%inherit file="root.mak"/>
 
+<%block name="style">
+    .row-fluid {
+        border-radius: 0;
+    }
+</%block>
+
 <%block name="title">
     <title>ACLARK.NET, LLC &mdash; Team</title>
 </%block>
