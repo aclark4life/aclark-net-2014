@@ -2,6 +2,56 @@
 from pyramid.config import Configurator
 
 
+# XXX Some day, do something useful here. E.g. enable some CRUD functionality
+# for the website content just like a CMS! ;-)
+def about(request):
+    """
+    """
+    return {}
+
+
+def clients(request):
+    """
+    """
+    return {}
+
+
+def contact(request):
+    """
+    """
+    return {}
+
+
+def projects(request):
+    """
+    """
+    return {}
+
+
+def root(request):
+    """
+    """
+    return {}
+
+
+def services(request):
+    """
+    """
+    return {}
+
+
+def testimonials(request):
+    """
+    """
+    return {}
+
+
+def team(request):
+    """
+    """
+    return {}
+
+
 def main(global_config, **settings):
     """
     """
@@ -21,35 +71,31 @@ def main(global_config, **settings):
 
     # XXX Consider using view decorator instead
     config.add_view(
-        'aclarknet.views.about',
-        renderer='aclarknet:templates/about.mak',
-        route_name='about')
-    config.add_view(
-        'aclarknet.views.clients',
+        clients,
         renderer='aclarknet:templates/clients.mak',
         route_name='clients')
     config.add_view(
-        'aclarknet.views.contact',
+        contact,
         renderer='aclarknet:templates/contact.mak',
         route_name='contact')
     config.add_view(
-        'aclarknet.views.projects',
+        projects,
         renderer='aclarknet:templates/projects.mak',
         route_name='projects')
     config.add_view(
-        'aclarknet.views.root',
+        root,
         renderer='aclarknet:templates/root.mak',
         route_name='root')
     config.add_view(
-        'aclarknet.views.services',
+        services,
         renderer='aclarknet:templates/services.mak',
         route_name='services')
     config.add_view(
-        'aclarknet.views.testimonials',
+        testimonials,
         renderer='aclarknet:templates/testimonials.mak',
         route_name='testimonials')
     config.add_view(
-        'aclarknet.views.team',
+        team,
         renderer='aclarknet:templates/team.mak',
         route_name='team')
 
