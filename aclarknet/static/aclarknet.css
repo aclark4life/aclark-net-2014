@@ -16,8 +16,9 @@
 }
 
 .quote {
-    font-size: 175%; 
-    line-height: 40px; 
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 30px;
     background-color: #F5F5F5;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 4px 4px 4px 4px;
