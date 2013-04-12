@@ -21,7 +21,7 @@
 
 <%block name="jumbotron">
     <h1>Clients</h1>
-    <h2>A partial list of valued clients from the Education, Government, Non-Profit, and Business sectors.</h2>
+    <h2>A partial list of our valued clients from the Education, Government, Non-Profit, and Business sectors.</h2>
     <div class="row-fluid">
         <span class="span12">
 
