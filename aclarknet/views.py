@@ -1,5 +1,3 @@
-
-
 def default(request):
     """
     This is the default view, to be used with every route since we provide
