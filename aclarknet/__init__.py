@@ -1,4 +1,3 @@
-# XXX Why am I putting code in __init__.py?
 from pyramid.config import Configurator
 from pyramid.httpexceptions import HTTPMovedPermanently
 
@@ -6,8 +5,6 @@ from pyramid.httpexceptions import HTTPMovedPermanently
 BLOG_URL = "http://blog.aclark.net"
 
 
-# XXX Some day, do something useful here. E.g. enable some CRUD functionality
-# for the website content just like a CMS! ;-)
 def clients(request):
     """
     """
