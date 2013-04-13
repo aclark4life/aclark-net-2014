@@ -8,7 +8,7 @@ def default(request):
     """
     This is the default view, to be used with every route since we provide
     no content editing functionality yet. Even then, maybe a default view
-    could still be used?
+    could still be used.
     """
     return {}
 
@@ -19,12 +19,9 @@ def main(global_config, **settings):
     """
     config = Configurator()
 
-    # Redirs for blog shuffle
     config.add_route('blog', '/blog')
     config.add_route('blog_entry', '/blog/{entry:.*}')
     config.add_route('blog_slash', '/blog/')
-
-    # Everything else
     config.add_route('contact', '/contact')
     config.add_route('clients', '/clients')
     config.add_route('projects', '/projects')
@@ -32,21 +29,13 @@ def main(global_config, **settings):
     config.add_route('team', '/team')
     config.add_route('testimonials', '/testimonials')
     config.add_route('root', '/')
-
-    # Static resources
     config.add_static_view(
         'static', 'aclarknet:static', cache_max_age=3600)
 
     # XXX Consider using view decorator instead
-    config.add_view(  # Redir
-        blog,
-        route_name='blog')
-    config.add_view(  # Redir
-        blog_entry,
-        route_name='blog_entry')
-    config.add_view(  # Redir
-        blog_slash,
-        route_name='blog_slash')
+    config.add_view(blog, route_name='blog')
+    config.add_view(blog_entry, route_name='blog_entry')
+    config.add_view(blog_slash, route_name='blog_slash')
     config.add_view(
         default,
         renderer='aclarknet:templates/clients.mak',
