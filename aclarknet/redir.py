@@ -1,27 +1,26 @@
 from pyramid.httpexceptions import HTTPMovedPermanently
 
 
-BLOG_URL = "http://blog.aclark.net"
+REDIR_TO = 'http://blog.aclark.net'
 
 
 def blog(request):
     """
-    Handle blog move from aclark.net/blog to blog.aclark.net
+    Redir: aclark.net/blog -> blog.aclark.net
     """
-    return HTTPMovedPermanently(location=BLOG_URL)
+    return HTTPMovedPermanently(location=REDIR_TO)
 
 
 def blog_entry(request):
     """
-    Handle blog move from aclark.net/blog/{entry} to blog.aclark.net/entry
+    Redir: aclark.net/blog/{entry} -> blog.aclark.net/entry
     """
     entry = request.matchdict['entry']
-    return HTTPMovedPermanently(
-        location="%s/%s" % (BLOG_URL, entry))
+    return HTTPMovedPermanently(location="%s/%s" % (REDIR_TO, entry))
 
 
 def blog_slash(request):
     """
-    Handle blog move from aclark.net/blog/ to blog.aclark.net
+    Redir: aclark.net/blog/ -> blog.aclark.net
     """
-    return HTTPMovedPermanently(location=BLOG_URL)
+    return HTTPMovedPermanently(location=REDIR_TO)
