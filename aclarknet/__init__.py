@@ -80,7 +80,7 @@ def main(global_config, **settings):
 
     # Redirs
     config.add_route('blog', '/blog')
-    config.add_route('blog_entry', '/blog/{entry}*')
+    config.add_route('blog_entry', '/blog/{entry:.*')
     config.add_route('blog_slash', '/blog/')
 
     # Everything else
