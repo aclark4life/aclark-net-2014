@@ -27,7 +27,7 @@ def blog_entry(request):
     """
     entry = request.matchdict['entry']
     return HTTPMovedPermanently(
-        location="http://%s%s" % (BLOG_URL, entry))
+        location="%s/%s" % (BLOG_URL, entry))
 
 
 def blog_slash(request):
