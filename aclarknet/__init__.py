@@ -2,15 +2,7 @@ from pyramid.config import Configurator
 from .redir import blog
 from .redir import blog_entry
 from .redir import blog_slash
-
-
-def default(request):
-    """
-    This is the default view, to be used with every route since we provide
-    no content editing functionality yet. Even then, maybe a default view
-    could still be used.
-    """
-    return {}
+from .views import default
 
 
 def main(global_config, **settings):
@@ -18,7 +10,6 @@ def main(global_config, **settings):
     Oppan wsgi style! This is the WSGI application, y'all.
     """
     config = Configurator()
-
     config.add_route('blog', '/blog')
     config.add_route('blog_entry', '/blog/{entry:.*}')
     config.add_route('blog_slash', '/blog/')
@@ -31,8 +22,6 @@ def main(global_config, **settings):
     config.add_route('root', '/')
     config.add_static_view(
         'static', 'aclarknet:static', cache_max_age=3600)
-
-    # XXX Consider using view decorator instead
     config.add_view(blog, route_name='blog')
     config.add_view(blog_entry, route_name='blog_entry')
     config.add_view(blog_slash, route_name='blog_slash')
@@ -64,5 +53,4 @@ def main(global_config, **settings):
         default,
         renderer='aclarknet:templates/team.mak',
         route_name='team')
-
     return config.make_wsgi_app()
