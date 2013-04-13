@@ -3,6 +3,9 @@ from pyramid.config import Configurator
 from pyramid.httpexceptions import HTTPMovedPermanently
 
 
+BLOG_URL = "http://blog.aclark.net"
+
+
 # XXX Some day, do something useful here. E.g. enable some CRUD functionality
 # for the website content just like a CMS! ;-)
 def clients(request):
@@ -15,8 +18,7 @@ def blog(request):
     """
     Handle blog move from aclark.net/blog to blog.aclark.net
     """
-    return HTTPMovedPermanently(location="http://%s%s" % (
-        'blog.aclark.net', request.path_qs.replace('/blog', '')))
+    return HTTPMovedPermanently(location=BLOG_URL)
 
 
 def blog_entry(request):
@@ -24,8 +26,8 @@ def blog_entry(request):
     Handle blog move from aclark.net/blog to blog.aclark.net
     """
     entry = request.matchdict['entry']
-    return HTTPMovedPermanently(location="http://%s%s" % (
-        'blog.aclark.net', request.path_qs.replace('/blog', '') + entry))
+    return HTTPMovedPermanently(
+        location="http://%s%s" % (BLOG_URL, entry))
 
 
 def contact(request):
@@ -71,6 +73,7 @@ def main(global_config, **settings):
 
     # Redirs
     config.add_route('blog_entry', '/blog/{entry}')
+    config.add_route('blog', '/blog/')
     config.add_route('blog', '/blog')
 
     # Everything else
@@ -86,12 +89,17 @@ def main(global_config, **settings):
         'static', 'aclarknet:static', cache_max_age=3600)
 
     # XXX Consider using view decorator instead
-    config.add_view(
+
+    config.add_view(  # Redir
         blog,
         route_name='blog')
-    config.add_view(
+    config.add_view(  # Redir
         blog_entry,
         route_name='blog_entry')
+    config.add_view(  # Redir
+        blog,
+        route_name='blog_slash')
+
     config.add_view(
         clients,
         renderer='aclarknet:templates/clients.mak',
