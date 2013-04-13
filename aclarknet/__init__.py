@@ -30,6 +30,13 @@ def blog_entry(request):
         location="http://%s%s" % (BLOG_URL, entry))
 
 
+def blog_slash(request):
+    """
+    Handle blog move from aclark.net/blog to blog.aclark.net
+    """
+    return HTTPMovedPermanently(location=BLOG_URL)
+
+
 def contact(request):
     """
     """
@@ -72,9 +79,9 @@ def main(global_config, **settings):
     config = Configurator()
 
     # Redirs
-    config.add_route('blog_entry', '/blog/{entry}')
-    config.add_route('blog', '/blog/')
     config.add_route('blog', '/blog')
+    config.add_route('blog_entry', '/blog/{entry}')
+    config.add_route('blog_slash', '/blog/')
 
     # Everything else
     config.add_route('contact', '/contact')
@@ -97,7 +104,7 @@ def main(global_config, **settings):
         blog_entry,
         route_name='blog_entry')
     config.add_view(  # Redir
-        blog,
+        blog_slash,
         route_name='blog_slash')
 
     config.add_view(
