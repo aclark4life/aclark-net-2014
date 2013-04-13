@@ -25,7 +25,7 @@ def blog_entry(request):
     """
     entry = request.matchdict['entry']
     return HTTPMovedPermanently(location="http://%s%s" % (
-        'blog.aclark.net', request.path_qs.replace('/blog', '/') + entry))
+        'blog.aclark.net', request.path_qs.replace('/blog', '') + entry))
 
 
 def contact(request):
