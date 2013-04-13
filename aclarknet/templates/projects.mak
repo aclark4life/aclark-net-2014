@@ -27,5 +27,8 @@
     <br />
     <br />
     <img src="/static/pyramid.png">
+    <br />
+    <br />
+    <img src="/static/new-zenoss-logo.png">
     
 </%block>
