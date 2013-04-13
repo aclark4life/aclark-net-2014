@@ -5,12 +5,6 @@ from pyramid.httpexceptions import HTTPMovedPermanently
 BLOG_URL = "http://blog.aclark.net"
 
 
-def clients(request):
-    """
-    """
-    return {}
-
-
 def blog(request):
     """
     Handle blog move from aclark.net/blog to blog.aclark.net
@@ -20,7 +14,7 @@ def blog(request):
 
 def blog_entry(request):
     """
-    Handle blog move from aclark.net/blog to blog.aclark.net
+    Handle blog move from aclark.net/blog/{entry} to blog.aclark.net/entry
     """
     entry = request.matchdict['entry']
     return HTTPMovedPermanently(
@@ -29,42 +23,12 @@ def blog_entry(request):
 
 def blog_slash(request):
     """
-    Handle blog move from aclark.net/blog to blog.aclark.net
+    Handle blog move from aclark.net/blog/ to blog.aclark.net
     """
     return HTTPMovedPermanently(location=BLOG_URL)
 
 
-def contact(request):
-    """
-    """
-    return {}
-
-
-def projects(request):
-    """
-    """
-    return {}
-
-
-def root(request):
-    """
-    """
-    return {}
-
-
-def services(request):
-    """
-    """
-    return {}
-
-
-def testimonials(request):
-    """
-    """
-    return {}
-
-
-def team(request):
+def default(request):
     """
     """
     return {}
@@ -105,31 +69,31 @@ def main(global_config, **settings):
         route_name='blog_slash')
 
     config.add_view(
-        clients,
+        default,
         renderer='aclarknet:templates/clients.mak',
         route_name='clients')
     config.add_view(
-        contact,
+        default,
         renderer='aclarknet:templates/contact.mak',
         route_name='contact')
     config.add_view(
-        projects,
+        default,
         renderer='aclarknet:templates/projects.mak',
         route_name='projects')
     config.add_view(
-        root,
+        default,
         renderer='aclarknet:templates/root.mak',
         route_name='root')
     config.add_view(
-        services,
+        default,
         renderer='aclarknet:templates/services.mak',
         route_name='services')
     config.add_view(
-        testimonials,
+        default,
         renderer='aclarknet:templates/testimonials.mak',
         route_name='testimonials')
     config.add_view(
-        team,
+        default,
         renderer='aclarknet:templates/team.mak',
         route_name='team')
 
