@@ -7,7 +7,7 @@ from .views import default
 
 def main(global_config, **settings):
     """
-    Oppan wsgi style! This is the WSGI application, y'all.
+    Oppan wsgi style! Configure and return WSGI application.
     """
     config = Configurator()
     config.add_route('blog', '/blog')
