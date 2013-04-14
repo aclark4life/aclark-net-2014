@@ -9,16 +9,16 @@ def contact(request):
     Send mail from contact form to info@aclark.net
     """
     form = deform.Form(ContactFormSchema(), buttons=('Send', ))
-#    if 'Send' in request.POST:  # detect that the submit button was clicked
-#        controls = request.POST.items()  # get the form controls
-#        try:
-#            appstruct = form.validate(controls)  # call validate
-#        except(deform.ValidationFailure, e):  # catch the exception
-#            return {
-#                'appstruct': appstruct,
-#                'form': e.render(),
-#            }  # re-render the form with an exception
-#        # the form submission succeeded, we have the data
+    if 'Send' in request.POST:
+        controls = request.POST.items()
+        try:
+            appstruct = form.validate(controls)
+        except(deform.ValidationFailure, e):
+            return {
+                'appstruct': appstruct,
+                'form': e.render(),
+            }  # re-render the form with an exception
+        # the form submission succeeded, we have the data
 #        body = appstruct['body']
 #        msg = MIMEText(str(body.encode('utf-8')))
 #        msg['Subject'] = 'New lead'

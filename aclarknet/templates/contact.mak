@@ -23,20 +23,23 @@
 
 <%block name="jumbotron">
     <h1>Contact</h1>
-    <h2>The best way to contact us is via the email address and phone number below.</h2>
+    <h2>The best way to contact us is via the email address, phone number or website form below.</h2>
     <div class="row-fluid">
         <div class="span12">
-            <p class="lead">
-<i class="icon-envelope icon-2x pull-left"></i>
-<i class="icon-phone icon-2x pull-left"></i>
-The Python programming language and open source software in general provide tremendous opportunities to businesses, but often require an expert to take advantage of. We provide services that empower individuals and organizations to benefit from such opportunities, and we would love to help you! Please contact us via email or phone to schedule a time to discuss your needs. We look forward to working with you.
+            <p class="lead"><i class="icon-envelope icon-2x pull-left"></i><i class="icon-phone icon-2x pull-left"></i>The Python programming language and open source software in general provide tremendous opportunities to businesses, but often require an expert to take advantage of. We provide services that empower individuals and organizations to benefit from such opportunities, and we would love to help you! Please contact us to schedule a time to discuss your needs. We look forward to working with you.</p>
             <p class="contact">
                 ACLARK.NET, LLC <br />
                 Bethesda, MD USA <br />
                 Email: <a href="mailto:info@aclark.net">info@aclark.net</a> <br />
                 Phone: 301-312-5236
-            </p>
 
+            </p>
+            <form action="/contact" method="POST">
+                <p class="contact">
+                    <textarea rows="3"></textarea>
+                    <input class="btn btn-block btn-large" type="submit" value="Send">
+                </p>
+            </form>
         </div>
     </div>
 </%block>
