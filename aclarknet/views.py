@@ -1,14 +1,14 @@
 from email.mime.text import MIMEText
 import deform
 import smtplib
+from .forms import ContactFormSchema
 
 
 def contact(request):
     """
     Send mail from contact form to info@aclark.net
     """
-#    mail = MailForm()
-#    form = deform.Form(mail, buttons=('Send', ))
+    form = deform.Form(ContactFormSchema(), buttons=('Send', ))
 #    if 'Send' in request.POST:  # detect that the submit button was clicked
 #        controls = request.POST.items()  # get the form controls
 #        try:
@@ -23,7 +23,7 @@ def contact(request):
 #        msg = MIMEText(str(body.encode('utf-8')))
 #        msg['Subject'] = 'New lead'
 #        msg['To'] = 'info@aclark.net'
-#        msg['From'] = 
+#        msg['From'] =
 #        try:
 #            s = smtplib.SMTP(config.GMAIL_HOST)
 #            s.starttls()
@@ -32,7 +32,6 @@ def contact(request):
 #            s.quit()
 #        except:
 #            pass
-
 
 
 def default(request):
