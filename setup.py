@@ -6,6 +6,7 @@ setup(
         'paste.app_factory': 'main=aclarknet:main',
     },
     install_requires=[
+        'deform',
         'pyramid',
         'waitress',
     ],
