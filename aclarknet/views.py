@@ -4,10 +4,9 @@ import smtplib
 from .forms import ContactFormSchema
 
 
-SENDGRID_HOST = os.environ.get('SENDGRID_HOST', 'smtp.sendgrid.net')
-SENDGRID_USER = os.environ.get('SENDGRID_USER', 'user')
-SENDGRID_PASS = os.environ.get('SENDGRID_PASS', 'pass')
-
+SENDGRID_HOSTNAME = os.environ.get('SENDGRID_HOST', 'smtp.sendgrid.net')
+SENDGRID_USERNAME = os.environ.get('SENDGRID_USER', 'username')
+SENDGRID_PASSWORD = os.environ.get('SENDGRID_PASS', 'password')
 
 
 def contact(request):
@@ -38,9 +37,9 @@ def contact(request):
         msg = msg.as_string()
         to = list(to)
         try:
-            s = smtplib.SMTP(SENDGRID_HOST)
+            s = smtplib.SMTP(SENDGRID_HOSTNAME)
             s.starttls()
-            s.login(SENDGRID_USER, SENDGRID_PASS)
+            s.login(SENDGRID_USERNAME, SENDGRID_PASSWORD)
             s.sendmail(lead, to, msg)
             s.quit()
         except:
