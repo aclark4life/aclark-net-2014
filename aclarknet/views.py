@@ -6,7 +6,7 @@ from .forms import ContactFormSchema
 
 def contact(request):
     """
-    Render contact form made with deform form library
+    Create and render deform form containing colander schema
     """
     form = deform.Form(ContactFormSchema(), buttons=('Send', ))
     if 'Send' in request.POST:
