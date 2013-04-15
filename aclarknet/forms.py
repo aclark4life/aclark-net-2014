@@ -4,7 +4,7 @@ import deform
 
 class ContactFormSchema(colander.MappingSchema):
     """
-    Contact form schema, built with colander, to be used with deform form
+    Contact form schema, built with colander, to be used with the deform form
     library
     """
     email = colander.SchemaNode(
