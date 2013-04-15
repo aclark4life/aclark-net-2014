@@ -33,12 +33,11 @@ def contact(request):
         msg['To'] = CONTACT_FORM_RECIPIENT
         msg['From'] = sender
         msg = msg.as_string()
-        recipient = list(CONTACT_FORM_RECIPIENT)
         try:
             smtp_server = smtplib.SMTP(SENDGRID_HOSTNAME)
             smtp_server.starttls()
             smtp_server.login(SENDGRID_USERNAME, SENDGRID_PASSWORD)
-            smtp_server.sendmail(sender, recipient, msg)
+            smtp_server.sendmail(sender, CONTACT_FORM_RECIPIENT, msg)
             smtp_server.quit()
         except:
             request.session.flash(CONTACT_FORM_ERROR)
