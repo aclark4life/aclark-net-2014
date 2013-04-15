@@ -19,6 +19,12 @@
     <div class="row-fluid">
         <div class="span12">
             <p class="lead"><i class="icon-envelope icon-2x pull-left"></i><i class="icon-phone icon-2x pull-left"></i>The Python programming language and open source software in general provide tremendous opportunities to businesses, but often require an expert to take advantage of. We provide services that empower individuals and organizations to benefit from such opportunities, and we would love to help you! Please contact us to schedule a time to discuss your needs. We look forward to working with you.</p>
+            <br />
+            <br />
+            <div style="text-align: left ; margin: auto; width: 740px;">
+                ${form|n}
+            </div>
+            <hr>
             <p class="contact">
                 ACLARK.NET, LLC <br />
                 Bethesda, MD USA <br />
@@ -34,12 +40,6 @@
                 </p>
             </form>
             -->
-            <hr>
-            <br />
-            <br />
-            <div style="text-align: left ; margin: auto; width: 740px;">
-                ${form|n}
-            </div>
         </div>
     </div>
 </%block>
