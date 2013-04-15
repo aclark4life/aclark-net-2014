@@ -13,7 +13,7 @@ class ContactFormSchema(colander.MappingSchema):
     )
     msg = colander.SchemaNode(
         colander.String(),
-        widget=deform.widget.TextAreaWidget(rows=20, cols=120),
-        validator=colander.Length(1),
         title="Your message",
+        validator=colander.Length(1),
+        widget=deform.widget.TextAreaWidget(rows=20, cols=120),
     )
