@@ -13,7 +13,7 @@ def contact(request):
     Create and render deform form containing colander schema
     """
     form = deform.Form(ContactFormSchema(), buttons=('Send', ))
-    to = 'info@aclark.net'
+    recipient = 'info@aclark.net'
     if 'Send' in request.POST:
         controls = request.POST.items()
         try:
@@ -25,21 +25,21 @@ def contact(request):
         return {
             'form': form.render(),
         }
-        lead = appstruct['email']
+        sender = appstruct['email']
         body = appstruct['message']
         body = body.encode('utf-8')
         body = str(body)
         msg = MIMEText(body)
         msg['Subject'] = 'New lead'
-        msg['To'] = to
-        msg['From'] = lead
+        msg['To'] = recipient
+        msg['From'] = sender
         msg = msg.as_string()
-        to = list(to)
+        recipient = list(recipient)
         try:
             s = smtplib.SMTP(SENDGRID_HOSTNAME)
             s.starttls()
             s.login(SENDGRID_USERNAME, SENDGRID_PASSWORD)
-            s.sendmail(lead, to, msg)
+            s.sendmail(sender, recipient, msg)
             s.quit()
         except:
             # XXX Do something here
