@@ -1,7 +1,7 @@
 from pyramid.config import Configurator
-from .redir import blog
-from .redir import blog_entry
-from .redir import blog_slash
+from .redirs import blog
+from .redirs import blog_entry
+from .redirs import blog_slash
 from .views import contact
 from .views import default
 import deform_bootstrap
