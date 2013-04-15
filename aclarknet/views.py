@@ -42,6 +42,7 @@ def contact(request):
             smtp_server.quit()
         except:
             request.session.flash(CONTACT_FORM_ERROR)
+        appstruct = []
         return {
             'form': form.render(),
             'request': request,
