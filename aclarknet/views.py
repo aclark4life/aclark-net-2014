@@ -2,12 +2,10 @@ from email.mime.text import MIMEText
 import deform
 import os
 import smtplib
+from .config import SENDGRID_HOSTNAME
+from .config import SENDGRID_PASSWORD
+from .config import SENDGRID_USERNAME
 from .forms import ContactFormSchema
-
-
-SENDGRID_HOSTNAME = os.environ.get('SENDGRID_HOST', 'smtp.sendgrid.net')
-SENDGRID_USERNAME = os.environ.get('SENDGRID_USER', 'username')
-SENDGRID_PASSWORD = os.environ.get('SENDGRID_PASS', 'password')
 
 
 def contact(request):
