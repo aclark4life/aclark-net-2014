@@ -1,7 +1,8 @@
 from email.mime.text import MIMEText
 import deform
 import smtplib
-from .config import CONTACT_RECIPIENT
+from .config import CONTACT_FORM_SUBJECT
+from .config import CONTACT_FORM_RECIPIENT
 from .config import SENDGRID_HOSTNAME
 from .config import SENDGRID_PASSWORD
 from .config import SENDGRID_USERNAME
@@ -13,7 +14,6 @@ def contact(request):
     Create and render deform form containing colander schema
     """
     form = deform.Form(ContactFormSchema(), buttons=('Send', ))
-    recipient = CONTACT_RECIPIENT 
     if 'Send' in request.POST:
         controls = request.POST.items()
         try:
@@ -28,11 +28,11 @@ def contact(request):
         body = body.encode('utf-8')
         body = str(body)
         msg = MIMEText(body)
-        msg['Subject'] = 'New lead'
-        msg['To'] = recipient
+        msg['Subject'] = CONTACT_FORM_SUBJECT
+        msg['To'] = CONTACT_FORM_RECIPIENT
         msg['From'] = sender
         msg = msg.as_string()
-        recipient = list(recipient)
+        recipient = list(CONTACT_FORM_RECIPIENT)
         try:
             smtp_server = smtplib.SMTP(SENDGRID_HOSTNAME)
             smtp_server.starttls()
