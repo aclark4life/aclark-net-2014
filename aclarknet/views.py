@@ -17,8 +17,13 @@ def contact(request):
             return {
                 'appstruct': appstruct,
                 'form': e.render(),
-            }  # re-render the form with an exception
-        # the form submission succeeded, we have the data
+            }
+        return {
+            'email': email,
+            'body': body,
+        }
+    return {}
+
 #        body = appstruct['body']
 #        msg = MIMEText(str(body.encode('utf-8')))
 #        msg['Subject'] = 'New lead'
@@ -36,8 +41,8 @@ def contact(request):
 
 def default(request):
     """
-    This is the default view, to be used with every route since we provide
-    no content editing functionality yet. Even then, maybe a default view
-    could still be used.
+    This is the default view, to be used with most routes since we do not
+    provide any content editing ability yet. Even then, maybe a default view
+    is still needed.
     """
     return {}

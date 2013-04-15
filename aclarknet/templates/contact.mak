@@ -20,7 +20,6 @@
     <li class="active"><a href="/contact">Contact</a></li>
 </%block>
 
-
 <%block name="jumbotron">
     <h1>Contact</h1>
     <h2>The best way to contact us is via the email address, phone number or website form below.</h2>
@@ -32,12 +31,12 @@
                 Bethesda, MD USA <br />
                 Email: <a href="mailto:info@aclark.net">info@aclark.net</a> <br />
                 Phone: 301-312-5236
-
             </p>
             <form action="/contact" method="POST">
                 <p class="contact">
-                    <textarea rows="3"></textarea>
-                    <input class="btn btn-block btn-large" type="submit" value="Send">
+                    <input type="text" placeholder="Your email">
+                    <textarea rows="3" placeholder="Your message"></textarea>
+                    <input class="btn btn-block btn-large" type="submit" value="Send"> 
                 </p>
             </form>
         </div>
