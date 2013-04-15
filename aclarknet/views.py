@@ -18,9 +18,10 @@ def contact(request):
                 'form': form.render(),
             }
         return {
-            'email': email,
-            'body': body,
+            'form': form.render(),
         }
+        email = appstruct['email']
+        msg = appstruct['message']
     return {
         'form': form.render(),
     }
