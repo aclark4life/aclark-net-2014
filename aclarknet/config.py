@@ -4,7 +4,8 @@ import os
 CONTACT_FORM_ERROR = os.environ.get(
     'CONTACT_FORM_ERROR',
     'Server error: failed to send message! Please try again later.')
-CONTACT_FORM_RECIPIENT = os.environ.get('CONTACT_FORM_RECIPIENT', 'info@aclark.net')
+CONTACT_FORM_RECIPIENT = os.environ.get(
+    'CONTACT_FORM_RECIPIENT', 'info@aclark.net')
 CONTACT_FORM_SUBJECT = os.environ.get(
     'CONTACT_FORM_SUBJECT', 'This just in: new lead!')
 SENDGRID_HOSTNAME = os.environ.get('SENDGRID_HOSTNAME', 'smtp.sendgrid.net')
