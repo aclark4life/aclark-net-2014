@@ -2,7 +2,9 @@ from pyramid.config import Configurator
 from .redir import blog
 from .redir import blog_entry
 from .redir import blog_slash
+from .views import contact
 from .views import default
+import deform_bootstrap
 
 
 def main(global_config, **settings):
@@ -30,7 +32,7 @@ def main(global_config, **settings):
         renderer='aclarknet:templates/clients.mak',
         route_name='clients')
     config.add_view(
-        default,
+        contact,
         renderer='aclarknet:templates/contact.mak',
         route_name='contact')
     config.add_view(
@@ -53,4 +55,5 @@ def main(global_config, **settings):
         default,
         renderer='aclarknet:templates/team.mak',
         route_name='team')
+    config.include(deform_bootstrap)
     return config.make_wsgi_app()

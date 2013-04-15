@@ -32,6 +32,7 @@
                 Email: <a href="mailto:info@aclark.net">info@aclark.net</a> <br />
                 Phone: 301-312-5236
             </p>
+            <!--
             <form action="/contact" method="POST">
                 <p class="contact">
                     <input type="text" placeholder="Your email">
@@ -39,6 +40,8 @@
                     <input class="btn btn-block btn-large" type="submit" value="Send"> 
                 </p>
             </form>
+            -->
+            ${form|n}
         </div>
     </div>
 </%block>

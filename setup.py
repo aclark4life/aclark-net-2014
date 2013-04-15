@@ -7,6 +7,7 @@ setup(
     },
     install_requires=[
         'deform',
+        'deform_bootstrap',
         'pyramid',
         'waitress',
     ],

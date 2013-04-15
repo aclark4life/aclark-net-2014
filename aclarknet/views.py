@@ -6,23 +6,24 @@ from .forms import ContactFormSchema
 
 def contact(request):
     """
-    Send mail from contact form to info@aclark.net
+    Render contact form made with deform form library
     """
     form = deform.Form(ContactFormSchema(), buttons=('Send', ))
     if 'Send' in request.POST:
         controls = request.POST.items()
         try:
             appstruct = form.validate(controls)
-        except(deform.ValidationFailure, e):
+        except deform.ValidationFailure:
             return {
-                'appstruct': appstruct,
-                'form': e.render(),
+                'form': form.render(),
             }
         return {
             'email': email,
             'body': body,
         }
-    return {}
+    return {
+        'form': form.render(),
+    }
 
 #        body = appstruct['body']
 #        msg = MIMEText(str(body.encode('utf-8')))
@@ -43,6 +44,6 @@ def default(request):
     """
     This is the default view, to be used with most routes since we do not
     provide any content editing ability yet. Even then, maybe a default view
-    is still needed.
+    would still be helpful.
     """
     return {}
