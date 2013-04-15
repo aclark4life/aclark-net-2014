@@ -4,11 +4,18 @@ import smtplib
 from .forms import ContactFormSchema
 
 
+SENDGRID_HOST = os.environ.get('SENDGRID_HOST', 'smtp.sendgrid.net')
+SENDGRID_USER = os.environ.get('SENDGRID_USER', 'user')
+SENDGRID_PASS = os.environ.get('SENDGRID_PASS', 'pass')
+
+
+
 def contact(request):
     """
     Create and render deform form containing colander schema
     """
     form = deform.Form(ContactFormSchema(), buttons=('Send', ))
+    to = 'info@aclark.net'
     if 'Send' in request.POST:
         controls = request.POST.items()
         try:
@@ -20,25 +27,29 @@ def contact(request):
         return {
             'form': form.render(),
         }
-        email = appstruct['email']
-        msg = appstruct['message']
+        lead = appstruct['email']
+        body = appstruct['message']
+        body = body.encode('utf-8')
+        body = str(body)
+        msg = MIMEText(body)
+        msg['Subject'] = 'New lead'
+        msg['To'] = to
+        msg['From'] = lead
+        msg = msg.as_string()
+        to = list(to)
+        try:
+            s = smtplib.SMTP(SENDGRID_HOST)
+            s.starttls()
+            s.login(SENDGRID_USER, SENDGRID_PASS)
+            s.sendmail(lead, to, msg)
+            s.quit()
+        except:
+            # XXX Do something here
+            pass
+
     return {
         'form': form.render(),
     }
-
-#        body = appstruct['body']
-#        msg = MIMEText(str(body.encode('utf-8')))
-#        msg['Subject'] = 'New lead'
-#        msg['To'] = 'info@aclark.net'
-#        msg['From'] =
-#        try:
-#            s = smtplib.SMTP(config.GMAIL_HOST)
-#            s.starttls()
-#            s.login(config.GMAIL_USER, config.GMAIL_PASS)
-#            s.sendmail(config.ADMIN_EMAIL, [to], msg.as_string())
-#            s.quit()
-#        except:
-#            pass
 
 
 def default(request):
