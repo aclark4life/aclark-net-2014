@@ -9,11 +9,11 @@ class ContactFormSchema(colander.MappingSchema):
     """
     email = colander.SchemaNode(
         colander.String(),
-        title="Please tell us your email address",
+        title="Your email address",
     )
     msg = colander.SchemaNode(
         colander.String(),
-        title="And how can we help you?",
+        title="How can we help you",
         validator=colander.Length(1),
         widget=deform.widget.TextAreaWidget(rows=20, cols=120),
     )
