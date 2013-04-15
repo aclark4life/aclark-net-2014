@@ -1,3 +1,4 @@
+from pyramid.session import UnencryptedCookieSessionFactoryConfig
 from pyramid.config import Configurator
 from .redir import blog
 from .redir import blog_entry
@@ -11,7 +12,8 @@ def main(global_config, **settings):
     """
     Oppan wsgi style! Configure and return WSGI application.
     """
-    config = Configurator()
+    my_session_factory = UnencryptedCookieSessionFactoryConfig('itsaseekreet')
+    config = Configurator(session_factory = my_session_factory)
     config.add_route('blog', '/blog')
     config.add_route('blog_entry', '/blog/{entry:.*}')
     config.add_route('blog_slash', '/blog/')
