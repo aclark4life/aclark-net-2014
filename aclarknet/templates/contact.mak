@@ -1,12 +1,5 @@
 <%inherit file="root.mak"/>
 
-<%block name="style">
-    .footer {
-        color: black;
-        margin-right: 11em;
-    }
-</%block>
-
 <%block name="title">
     <title>ACLARK.NET, LLC &mdash; Contact</title>
 </%block>
@@ -41,6 +34,7 @@
                 </p>
             </form>
             -->
+            <hr>
             <br />
             <br />
             <div style="text-align: left ; margin: auto; width: 740px;">
