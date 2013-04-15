@@ -1,8 +1,9 @@
 from email.mime.text import MIMEText
 import deform
 import smtplib
-from .config import CONTACT_FORM_SUBJECT
+from .config import CONTACT_FORM_ERROR
 from .config import CONTACT_FORM_RECIPIENT
+from .config import CONTACT_FORM_SUBJECT
 from .config import SENDGRID_HOSTNAME
 from .config import SENDGRID_PASSWORD
 from .config import SENDGRID_USERNAME
@@ -40,7 +41,7 @@ def contact(request):
             smtp_server.sendmail(sender, recipient, msg)
             smtp_server.quit()
         except:
-            request.session.flash("Failed to send message!")
+            request.session.flash(CONTACT_FORM_ERROR)
         return {
             'form': form.render(),
             'request': request,
