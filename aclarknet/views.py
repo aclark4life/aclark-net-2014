@@ -21,12 +21,10 @@ def contact(request):
         except deform.ValidationFailure:
             return {
                 'form': form.render(),
+                'request': request,
             }
-        return {
-            'form': form.render(),
-        }
         sender = appstruct['email']
-        body = appstruct['message']
+        body = appstruct['msg']
         body = body.encode('utf-8')
         body = str(body)
         msg = MIMEText(body)
@@ -36,17 +34,20 @@ def contact(request):
         msg = msg.as_string()
         recipient = list(recipient)
         try:
-            s = smtplib.SMTP(SENDGRID_HOSTNAME)
-            s.starttls()
-            s.login(SENDGRID_USERNAME, SENDGRID_PASSWORD)
-            s.sendmail(sender, recipient, msg)
-            s.quit()
+            smtp_server = smtplib.SMTP(SENDGRID_HOSTNAME)
+            smtp_server.starttls()
+            smtp_server.login(SENDGRID_USERNAME, SENDGRID_PASSWORD)
+            smtp_server.sendmail(sender, recipient, msg)
+            smtp_server.quit()
         except:
-            # XXX Do something here
-            pass
-
+            request.session.flash("Failed to send message!")
+        return {
+            'form': form.render(),
+            'request': request,
+        }
     return {
         'form': form.render(),
+        'request': request,
     }
 
 
