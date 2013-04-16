@@ -6,10 +6,6 @@ from email.mime.text import MIMEText
 from .config import FORM_ERROR
 from .config import FORM_SUCCESS
 
-from .config import GMAIL_HOSTNAME
-from .config import GMAIL_PASSWORD
-from .config import GMAIL_USERNAME
-
 from .config import MIME_ONE_RECIPIENT
 from .config import MIME_ONE_SUBJECT
 from .config import MIME_TWO_MESSAGE
