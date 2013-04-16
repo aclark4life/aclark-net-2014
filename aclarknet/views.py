@@ -4,6 +4,7 @@ import smtplib
 from .config import CONTACT_FORM_ERROR
 from .config import CONTACT_FORM_RECIPIENT
 from .config import CONTACT_FORM_SUBJECT
+from .config import CONTACT_FORM_SUCCESS
 from .config import SENDGRID_HOSTNAME
 from .config import SENDGRID_PASSWORD
 from .config import SENDGRID_USERNAME
@@ -39,9 +40,9 @@ def contact(request):
             smtp_server.login(SENDGRID_USERNAME, SENDGRID_PASSWORD)
             smtp_server.sendmail(sender, CONTACT_FORM_RECIPIENT, msg)
             smtp_server.quit()
+            request.session.flash(CONTACT_FORM_SUCCESS)
         except:
             request.session.flash(CONTACT_FORM_ERROR)
-        appstruct = []
         return {
             'form': form.render(),
             'request': request,
