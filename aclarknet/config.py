@@ -20,7 +20,7 @@ Thanks for contacting us! We'll be in touch within 24 hours.
 The ACLARK.NET, LLC team.
     """)
 RESPONSE_SUBJECT = os.environ.get(
-    '_RESPONSE_SUBJECT',
+    'RESPONSE_SUBJECT',
     'Thank you for contacting ACLARK.NET, LLC')
 
 SENDGRID_HOSTNAME = os.environ.get('SENDGRID_HOSTNAME', 'smtp.sendgrid.net')
