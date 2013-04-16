@@ -1,15 +1,18 @@
 from email.mime.text import MIMEText
 import deform
 import smtplib
-from .config import CONTACT_FORM_ERROR
-from .config import CONTACT_FORM_RECIPIENT
-from .config import CONTACT_FORM_SUBJECT
-from .config import CONTACT_FORM_SUCCESS
-from .config import CONTACT_RESPONSE_BODY
-from .config import CONTACT_RESPONSE_SUBJECT
+from .config import FORM_ERROR
+from .config import FORM_RECIPIENT
+from .config import FORM_SUBJECT
+from .config import FORM_SUCCESS
+
+from .config import RESPONSE_BODY
+from .config import RESPONSE_SUBJECT
+
 from .config import SENDGRID_HOSTNAME
 from .config import SENDGRID_PASSWORD
 from .config import SENDGRID_USERNAME
+
 from .forms import ContactFormSchema
 
 
@@ -32,26 +35,29 @@ def contact(request):
         body = appstruct['msg']
         body = body.encode('utf-8')
         body = str(body)
-        msg = MIMEText(body)
-        msg['Subject'] = CONTACT_FORM_SUBJECT
-        msg['To'] = CONTACT_FORM_RECIPIENT
-        msg['From'] = sender
-        msg = msg.as_string()
-        response = MIMEText(CONTACT_RESPONSE_BODY)
-        response['Subject'] = CONTACT_RESPONSE_SUBJECT
+
+        incoming = MIMEText(body)
+        incoming['Subject'] = FORM_SUBJECT
+        incoming['To'] = FORM_RECIPIENT
+        incoming['From'] = sender
+        incoming = incoming.as_string()
+
+        response = MIMEText(RESPONSE_BODY)
+        response['Subject'] = RESPONSE_SUBJECT
         response['To'] = sender
-        response['From'] = CONTACT_FORM_RECIPIENT
+        response['From'] = FORM_RECIPIENT
         response = response.as_string()
+
         try:
             smtp_server = smtplib.SMTP(SENDGRID_HOSTNAME)
             smtp_server.starttls()
             smtp_server.login(SENDGRID_USERNAME, SENDGRID_PASSWORD)
-            smtp_server.sendmail(sender, CONTACT_FORM_RECIPIENT, msg)
-            smtp_server.sendmail(CONTACT_FORM_RECIPIENT, sender, response)
+            smtp_server.sendmail(sender, FORM_RECIPIENT, incoming)
+            smtp_server.sendmail(FORM_RECIPIENT, sender, response)
             smtp_server.quit()
-            request.session.flash(CONTACT_FORM_SUCCESS)
+            request.session.flash(FORM_SUCCESS)
         except:
-            request.session.flash(CONTACT_FORM_ERROR)
+            request.session.flash(FORM_ERROR)
         return {
             'form': form.render(),
             'request': request,
