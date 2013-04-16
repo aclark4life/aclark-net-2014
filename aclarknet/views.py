@@ -64,7 +64,7 @@ def contact(request):
             smtp_server.sendmail(MIME_ONE_RECIPIENT, email, mime_document_one)
             smtp_server.quit()
 
-            smtp_server = smtplib.SMTP(GMAIL_HOSTNAME)
+            smtp_server = smtplib.SMTP(SENDGRID_HOSTNAME)
             smtp_server.starttls()
             smtp_server.login(SENDGRID_USERNAME, SENDGRID_PASSWORD)
             smtp_server.sendmail(email, MIME_ONE_RECIPIENT, mime_document_two)
