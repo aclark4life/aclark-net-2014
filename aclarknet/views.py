@@ -31,29 +31,32 @@ def contact(request):
                 'form': form.render(),
                 'request': request,
             }
-        sender = appstruct['email']
-        body = appstruct['msg']
-        body = body.encode('utf-8')
-        body = str(body)
+        # This is the form contents
+        email = appstruct['email']
+        message = appstruct['message']
+        message = message.encode('utf-8')
+        message = str(message)
 
-        incoming = MIMEText(body)
-        incoming['Subject'] = FORM_SUBJECT
-        incoming['To'] = FORM_RECIPIENT
-        incoming['From'] = sender
-        incoming = incoming.as_string()
+        # This is the mail to info@aclark.net
+        mime_document_one = MIMEText(message)
+        mime_document_one['Subject'] = FORM_SUBJECT
+        mime_document_one['To'] = FORM_RECIPIENT
+        mime_document_one['From'] = email
+        mime_document_one = mime_document_one.as_string()
 
-        response = MIMEText(RESPONSE_BODY)
-        response['Subject'] = RESPONSE_SUBJECT
-        response['To'] = sender
-        response['From'] = FORM_RECIPIENT
-        response = response.as_string()
+        # This is the mail to the new lead
+        mime_document_two = MIMEText(RESPONSE_BODY)
+        mime_document_two['Subject'] = RESPONSE_SUBJECT
+        mime_document_two['To'] = email
+        mime_document_two['From'] = FORM_RECIPIENT
+        mime_document_two = mime_document_two.as_string()
 
         try:
             smtp_server = smtplib.SMTP(SENDGRID_HOSTNAME)
             smtp_server.starttls()
             smtp_server.login(SENDGRID_USERNAME, SENDGRID_PASSWORD)
-            smtp_server.sendmail(sender, FORM_RECIPIENT, incoming)
-            smtp_server.sendmail(FORM_RECIPIENT, sender, response)
+            smtp_server.sendmail(email, FORM_RECIPIENT, mime_document_one)
+            smtp_server.sendmail(FORM_RECIPIENT, email, mime_document_two)
             smtp_server.quit()
             request.session.flash(FORM_SUCCESS)
         except:

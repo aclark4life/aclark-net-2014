@@ -12,7 +12,7 @@ class ContactFormSchema(colander.MappingSchema):
         title="Your email address",
         validator=colander.Email(),
     )
-    msg = colander.SchemaNode(
+    message = colander.SchemaNode(
         colander.String(),
         title="How can we help you",
         validator=colander.Length(1),
