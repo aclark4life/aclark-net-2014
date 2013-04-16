@@ -1,13 +1,19 @@
-from email.mime.text import MIMEText
 import deform
 import smtplib
+
+from email.mime.text import MIMEText
+
 from .config import FORM_ERROR
-from .config import FORM_RECIPIENT
-from .config import FORM_SUBJECT
 from .config import FORM_SUCCESS
 
-from .config import RESPONSE_BODY
-from .config import RESPONSE_SUBJECT
+from .config import GMAIL_HOSTNAME
+from .config import GMAIL_PASSWORD
+from .config import GMAIL_USERNAME
+
+from .config import MIME_ONE_RECIPIENT
+from .config import MIME_ONE_SUBJECT
+from .config import MIME_TWO_MESSAGE
+from .config import MIME_TWO_SUBJECT
 
 from .config import SENDGRID_HOSTNAME
 from .config import SENDGRID_PASSWORD
@@ -39,25 +45,31 @@ def contact(request):
 
         # This is the mail to info@aclark.net
         mime_document_one = MIMEText(message)
-        mime_document_one['Subject'] = FORM_SUBJECT
-        mime_document_one['To'] = FORM_RECIPIENT
+        mime_document_one['Subject'] = MIME_ONE_SUBJECT
+        mime_document_one['To'] = MIME_ONE_RECIPIENT
         mime_document_one['From'] = email
         mime_document_one = mime_document_one.as_string()
 
         # This is the mail to the new lead
-        mime_document_two = MIMEText(RESPONSE_BODY)
-        mime_document_two['Subject'] = RESPONSE_SUBJECT
+        mime_document_two = MIMEText(MIME_TWO_MESSAGE)
+        mime_document_two['Subject'] = MIME_TWO_SUBJECT
         mime_document_two['To'] = email
-        mime_document_two['From'] = FORM_RECIPIENT
+        mime_document_two['From'] = MIME_ONE_RECIPIENT
         mime_document_two = mime_document_two.as_string()
 
         try:
+            smtp_server = smtplib.SMTP(GMAIL_HOSTNAME)
+            smtp_server.starttls()
+            smtp_server.login(GMAIL_USERNAME, GMAIL_PASSWORD)
+            smtp_server.sendmail(MIME_ONE_RECIPIENT, email, mime_document_two)
+            smtp_server.quit()
+
             smtp_server = smtplib.SMTP(SENDGRID_HOSTNAME)
             smtp_server.starttls()
             smtp_server.login(SENDGRID_USERNAME, SENDGRID_PASSWORD)
-            smtp_server.sendmail(email, FORM_RECIPIENT, mime_document_one)
-            smtp_server.sendmail(FORM_RECIPIENT, email, mime_document_two)
+            smtp_server.sendmail(email, MIME_ONE_RECIPIENT, mime_document_one)
             smtp_server.quit()
+
             request.session.flash(FORM_SUCCESS)
         except:
             request.session.flash(FORM_ERROR)
