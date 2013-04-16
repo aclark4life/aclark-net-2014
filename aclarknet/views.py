@@ -5,6 +5,8 @@ from .config import CONTACT_FORM_ERROR
 from .config import CONTACT_FORM_RECIPIENT
 from .config import CONTACT_FORM_SUBJECT
 from .config import CONTACT_FORM_SUCCESS
+from .config import CONTACT_RESPONSE_BODY
+from .config import CONTACT_RESPONSE_SUBJECT
 from .config import SENDGRID_HOSTNAME
 from .config import SENDGRID_PASSWORD
 from .config import SENDGRID_USERNAME
@@ -35,6 +37,11 @@ def contact(request):
         msg['To'] = CONTACT_FORM_RECIPIENT
         msg['From'] = sender
         msg = msg.as_string()
+        response = MIMEText(CONTACT_RESPONSE_BODY)
+        response['Subject'] = CONTACT_RESPONSE_SUBJECT
+        response['To'] = sender
+        response['From'] = CONTACT_FORM_RECIPIENT
+        response = response.as_string()
         try:
             smtp_server = smtplib.SMTP(SENDGRID_HOSTNAME)
             smtp_server.starttls()
@@ -42,8 +49,7 @@ def contact(request):
             # XXX Send mail to us, not really what sendgrid is for
             smtp_server.sendmail(sender, CONTACT_FORM_RECIPIENT, msg)
             # Send mail to new lead, closer to what sendgrid is for
-            smtp_server.sendmail( 
-                CONTACT_FORM_RECIPIENT, sender, CONTACT_FORM_RESPONSE)
+            smtp_server.sendmail(CONTACT_FORM_RECIPIENT, sender, response)
             smtp_server.quit()
             request.session.flash(CONTACT_FORM_SUCCESS)
         except:
