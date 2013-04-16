@@ -24,10 +24,10 @@
             <div style="text-align: left ; margin: auto; width: 740px;">
                 <% error = request.session.pop_flash('errors') %>
                 <% success = request.session.pop_flash() %>
-                % if errors:
+                % if error:
                     <div class="alert alert-block alert-error">${error[0]}</div>
                 % endif
-                % if errors:
+                % if success:
                     <div class="alert alert-block alert-success">${success[0]}</div>
                 % endif
                 ${form|n}
