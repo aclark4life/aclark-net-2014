@@ -11,6 +11,10 @@ from .config import MIME_ONE_SUBJECT
 from .config import MIME_TWO_MESSAGE
 from .config import MIME_TWO_SUBJECT
 
+from .config import GMAIL_HOSTNAME
+from .config import GMAIL_PASSWORD
+from .config import GMAIL_USERNAME
+
 from .config import SENDGRID_HOSTNAME
 from .config import SENDGRID_PASSWORD
 from .config import SENDGRID_USERNAME
@@ -54,14 +58,18 @@ def contact(request):
         mime_document_two = mime_document_two.as_string()
 
         try:
-            smtp_server = smtplib.SMTP(SENDGRID_HOSTNAME)
+            smtp_server = smtplib.SMTP(GMAIL_HOSTNAME)
+            smtp_server.starttls()
+            smtp_server.login(GMAIL_USERNAME, GMAIL_PASSWORD)
+            smtp_server.sendmail(MIME_ONE_RECIPIENT, email, mime_document_one)
+            smtp_server.quit()
+
+            smtp_server = smtplib.SMTP(GMAIL_HOSTNAME)
             smtp_server.starttls()
             smtp_server.login(SENDGRID_USERNAME, SENDGRID_PASSWORD)
-            # This is the mail to info@aclark.net
-            smtp_server.sendmail(MIME_ONE_RECIPIENT, email, mime_document_one)
-            # This is the mail to the new lead
             smtp_server.sendmail(email, MIME_ONE_RECIPIENT, mime_document_two)
             smtp_server.quit()
+
             request.session.flash(FORM_SUCCESS)
         except:
             request.session.flash(FORM_ERROR, 'errors')
