@@ -6,6 +6,13 @@ CONTACT_FORM_ERROR = os.environ.get(
     'Server error: failed to send message! Please try again later.')
 CONTACT_FORM_RECIPIENT = os.environ.get(
     'CONTACT_FORM_RECIPIENT', 'info@aclark.net')
+CONTACT_FORM_RESPONSE = os.environ.get(
+    'CONTACT_FORM_RESPONSE',
+    """
+Thanks for contacting us! We'll be in touch within 24 hours.
+
+The ACLARK.NET, LLC team.
+    """)
 CONTACT_FORM_SUBJECT = os.environ.get(
     'CONTACT_FORM_SUBJECT', 'This just in: new lead!')
 CONTACT_FORM_SUCCESS = os.environ.get(

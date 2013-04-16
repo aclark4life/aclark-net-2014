@@ -13,7 +13,8 @@ from .forms import ContactFormSchema
 
 def contact(request):
     """
-    Create and render deform form containing colander schema
+    Create and render deform form containing colander schema. Provide
+    sendgrid integration for marketing.
     """
     form = deform.Form(ContactFormSchema(), buttons=('Send', ))
     if 'Send' in request.POST:
@@ -38,7 +39,11 @@ def contact(request):
             smtp_server = smtplib.SMTP(SENDGRID_HOSTNAME)
             smtp_server.starttls()
             smtp_server.login(SENDGRID_USERNAME, SENDGRID_PASSWORD)
+            # XXX Send mail to us, not really what sendgrid is for
             smtp_server.sendmail(sender, CONTACT_FORM_RECIPIENT, msg)
+            # Send mail to new lead, closer to what sendgrid is for
+            smtp_server.sendmail( 
+                CONTACT_FORM_RECIPIENT, sender, CONTACT_FORM_RESPONSE)
             smtp_server.quit()
             request.session.flash(CONTACT_FORM_SUCCESS)
         except:
