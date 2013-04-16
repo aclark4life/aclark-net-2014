@@ -2,12 +2,12 @@ import os
 
 
 FORM_ERROR = os.environ.get(
-   'FORM_ERROR',
-   'Server error: failed to send message! Please try again later.')
+    'FORM_ERROR',
+    'Server error: failed to send message! Please try again later.')
 FORM_RECIPIENT = os.environ.get(
-   'FORM_RECIPIENT', 'info@aclark.net')
+    'FORM_RECIPIENT', 'info@aclark.net')
 FORM_SUBJECT = os.environ.get(
-   'FORM_SUBJECT', 'This just in: new lead!')
+    'FORM_SUBJECT', 'This just in: new lead!')
 FORM_SUCCESS = os.environ.get(
     'FORM_SUCCESS',
     'Message sent! Please expect to hear from us within 24 hours.')
