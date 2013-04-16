@@ -236,6 +236,12 @@
     </div>
     <div class="row-fluid">
         <span class="span12">
+        <h3>PoliOps</h3>
+        <p class="lead"><i class="icon-suitcase icon-2x pull-left"></i>PoliOps helps progressive campaigns and organizations use their data more efficiently and effectively. By making data more accessbile available to decision‐makers, campaigns and organizations can make better strategic decisions and unlock new opportunities for positive change.</p>
+        </span>
+    </div>
+    <div class="row-fluid">
+        <span class="span12">
         <h3>Radio Free Asia</h3>
 
         <p class="lead"><i class="icon-globe icon-2x pull-left"></i>Radio Free Asia&apos;s mission is to provide accurate and timely news and information to Asian countries whose governments prohibit access to a free press.</p>
