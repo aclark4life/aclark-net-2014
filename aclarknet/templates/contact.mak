@@ -22,9 +22,13 @@
             <br />
             <br />
             <div style="text-align: left ; margin: auto; width: 740px;">
-                <% flash = request.session.pop_flash() %>
-                % if flash:
-                    <div class="alert alert-block alert-error">${flash[0]}</div>
+                <% error = request.session.pop_flash('errors') %>
+                <% success = request.session.pop_flash() %>
+                % if errors:
+                    <div class="alert alert-block alert-error">${error[0]}</div>
+                % endif
+                % if errors:
+                    <div class="alert alert-block alert-success">${success[0]}</div>
                 % endif
                 ${form|n}
             </div>

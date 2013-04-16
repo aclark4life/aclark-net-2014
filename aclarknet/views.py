@@ -68,7 +68,7 @@ def contact(request):
             smtp_server.quit()
             request.session.flash(FORM_SUCCESS)
         except:
-            request.session.flash(FORM_ERROR)
+            request.session.flash(FORM_ERROR, 'errors')
         return {
             'form': form.render(),
             'request': request,
