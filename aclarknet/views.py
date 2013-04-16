@@ -72,7 +72,7 @@ def contact(request):
         smtp_server.sendmail(email, MIME_ONE_RECIPIENT, mime_document_two)
         smtp_server.quit()
 
-            request.session.flash(FORM_SUCCESS)
+        request.session.flash(FORM_SUCCESS)
 #        except:
 #            request.session.flash(FORM_ERROR)
         return {
