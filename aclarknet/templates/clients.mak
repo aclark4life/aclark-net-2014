@@ -237,7 +237,7 @@
     <div class="row-fluid">
         <span class="span12">
         <h3>PoliOps</h3>
-        <p class="lead"><i class="icon-suitcase icon-2x pull-left"></i>PoliOps helps progressive campaigns and organizations use their data more efficiently and effectively. By making data more accessbile available to decision‐makers, campaigns and organizations can make better strategic decisions and unlock new opportunities for positive change.</p>
+        <p class="lead"><i class="icon-suitcase icon-2x pull-left"></i>PoliOps helps progressive campaigns and organizations use their data more efficiently and effectively. By making data more accessible available to decision‐makers, campaigns and organizations can make better strategic decisions and unlock new opportunities for positive change.</p>
         </span>
     </div>
     <div class="row-fluid">
