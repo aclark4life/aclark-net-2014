@@ -58,12 +58,14 @@ def contact(request):
         mime_document_two = mime_document_two.as_string()
 
         try:
+            # This is the mail to info@aclark.net
             smtp_server = smtplib.SMTP(GMAIL_HOSTNAME)
             smtp_server.starttls()
             smtp_server.login(GMAIL_USERNAME, GMAIL_PASSWORD)
             smtp_server.sendmail(MIME_ONE_RECIPIENT, email, mime_document_two)
             smtp_server.quit()
 
+            # This is the mail to the new lead
             smtp_server = smtplib.SMTP(SENDGRID_HOSTNAME)
             smtp_server.starttls()
             smtp_server.login(SENDGRID_USERNAME, SENDGRID_PASSWORD)
