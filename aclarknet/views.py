@@ -46,9 +46,7 @@ def contact(request):
             smtp_server = smtplib.SMTP(SENDGRID_HOSTNAME)
             smtp_server.starttls()
             smtp_server.login(SENDGRID_USERNAME, SENDGRID_PASSWORD)
-            # XXX Send mail to us, not really what sendgrid is for
             smtp_server.sendmail(sender, CONTACT_FORM_RECIPIENT, msg)
-            # Send mail to new lead, closer to what sendgrid is for
             smtp_server.sendmail(CONTACT_FORM_RECIPIENT, sender, response)
             smtp_server.quit()
             request.session.flash(CONTACT_FORM_SUCCESS)
