@@ -61,7 +61,7 @@
     <div class="row-fluid">
         <span class="span12">
             <h2>Steve Barber</h2>
-            <h3>System Administrator</h3>
+            <h3>Systems Consultant</h3>
             <h4>Gaithersburg, MD USA</h4>
             <p class="lead"><i class="icon-user icon-4x pull-left"></i>Steve Barber has a Bachelor of Science in Computer Science; he has been a Computer Scientist at the National Institute of Standards and Technology (NIST) since 1995, where he provides infrastructure support for over 500 scientists performing various kinds of research.</p>
         </span>
