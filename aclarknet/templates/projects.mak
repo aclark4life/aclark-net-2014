@@ -30,5 +30,8 @@
     <br />
     <br />
     <img src="/static/new-zenoss-logo.png">
+    <br />
+    <br />
+    <img src="/static/salesforce.png">
     
 </%block>
