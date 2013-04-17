@@ -27,7 +27,8 @@ def contact(request):
     Create and render deform form containing colander schema. Provide
     sendgrid integration for marketing.
     """
-    form = deform.Form(ContactFormSchema(), buttons=('Send', ))
+    schema = ContactFormSchema().bind(request=request)
+    form = deform.Form(schema, buttons=('Send', ))
     if 'Send' in request.POST:
         controls = request.POST.items()
         try:
