@@ -2,6 +2,9 @@ import colander
 import deform
 
 
+# HT: http://deformdemo.repoze.org/pyramid_csrf_demo/
+
+
 @colander.deferred
 def deferred_csrf_default(node, kw):
     request = kw.get('request')
