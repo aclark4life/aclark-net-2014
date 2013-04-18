@@ -41,8 +41,6 @@ def contact(request):
         # This is the form contents
         email = appstruct['email']
         message = appstruct['message']
-        message = message.encode('utf-8')
-        message = str(message)
 
         # This is the mail to info@aclark.net
         mime_document_one = MIMEText(message)
