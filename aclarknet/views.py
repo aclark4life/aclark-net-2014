@@ -30,7 +30,6 @@ def contact(request):
     schema = ContactFormSchema().bind(request=request)
     form = deform.Form(schema, buttons=('Send', ))
     if 'Send' in request.POST:
-        import pdb ; pdb.set_trace()
         items = request.POST.items()
         try:
             appstruct = form.validate(items)
