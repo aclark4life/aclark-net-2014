@@ -9,7 +9,7 @@
     font-weight: bold;
     font-size: 250%;
     line-height: 40px;
-    width:387px;
+    width:375px;
     margin:0px auto;
     text-align:left;
     padding: 1em;
@@ -27,7 +27,7 @@
 }
 
 textarea {
-    width: 375px;
+    width: 387px;
 }
 
 .form-actions {
