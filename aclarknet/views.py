@@ -72,13 +72,11 @@ def contact(request):
             smtp_server.login(SENDGRID_USERNAME, SENDGRID_PASSWORD)
             smtp_server.sendmail(MIME_ONE_RECIPIENT, email, mime_document_two)
             smtp_server.quit()
-
             request.session.flash(FORM_SUCCESS)
-            request.POST.clear()
         except:
             request.session.flash(FORM_ERROR, 'errors')
         return {
-            'form': form.render(),
+            'form': form.render(appstruct={}),
             'request': request,
         }
     return {
