@@ -30,6 +30,7 @@ def contact(request):
     schema = ContactFormSchema().bind(request=request)
     form = deform.Form(schema, buttons=('Send', ))
     if 'Send' in request.POST:
+        import pdb ; pdb.set_trace()
         items = request.POST.items()
         try:
             appstruct = form.validate(items)
@@ -74,6 +75,7 @@ def contact(request):
             smtp_server.quit()
 
             request.session.flash(FORM_SUCCESS)
+            request.POST.clear()
         except:
             request.session.flash(FORM_ERROR, 'errors')
         return {
