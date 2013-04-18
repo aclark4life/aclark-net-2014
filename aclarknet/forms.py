@@ -26,7 +26,7 @@ class CSRFSchema(colander.Schema):
     csrf = colander.SchemaNode(
         colander.String(),
         default=deferred_csrf_default,
-        validato=deferred_csrf_validator,
+        validator=deferred_csrf_validator,
         widget=deform.widget.HiddenWidget(),
     )
 
