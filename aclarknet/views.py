@@ -30,9 +30,9 @@ def contact(request):
     schema = ContactFormSchema().bind(request=request)
     form = deform.Form(schema, buttons=('Send', ))
     if 'Send' in request.POST:
-        controls = request.POST.items()
+        items = request.POST.items()
         try:
-            appstruct = form.validate(controls)
+            appstruct = form.validate(items)
         except deform.ValidationFailure:
             return {
                 'form': form.render(),
