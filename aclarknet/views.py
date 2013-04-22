@@ -48,6 +48,7 @@ def contact(request):
         mime_document_one['Subject'] = MIME_ONE_SUBJECT
         mime_document_one['To'] = MIME_ONE_RECIPIENT
         mime_document_one['From'] = email
+        mime_document_one['Reply-to'] = email
         mime_document_one = mime_document_one.as_string()
 
         # This is the mail to the new lead
