@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="http://twbs.github.io/bootstrap/2.3.2/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://twbs.github.io/bootstrap/2.3.2/assets/css/bootstrap.css">
     <link href="/static/aclarknet.css" rel="stylesheet">
     <link href="/static/font-awesome.css" rel="stylesheet">
     <style type="text/css">
