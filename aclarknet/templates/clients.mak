@@ -289,6 +289,7 @@
         <p class="lead"><i class="icon-suitcase icon-2x pull-left"></i>Founded in 2003, True Blade serves businesses, organizations and celebrity clients from their offices in Manhattan and suburban Washington, DC. True Blade Systems is particularly experienced in meeting the unique needs of domestic and international financial-services firms, including hedge funds, RIAs, broker-dealers and related businesses.</p>
         </span>
     </div>
+<!--
     <div class="row-fluid">
         <span class="span12">
         <h3>University of North Carolina at Chapel Hill</h3>
@@ -296,6 +297,7 @@
         <p class="lead"><i class="icon-book icon-2x pull-left"></i>The University of North Carolina at Chapel Hill is a coeducational public research university located in Chapel Hill, North Carolina, United States.</p>
         </span>
     </div>
+-->
     <div class="row-fluid">
         <span class="span12">
         <h3>Web Development Group</h3>
