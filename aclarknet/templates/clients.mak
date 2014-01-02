@@ -76,6 +76,13 @@
     </div>
     <div class="row-fluid">
         <span class="span12">
+        <h3>Cleveland State University</h3>
+        <h4>Parker Hannifin Human Motion & Control Laboratory</h4>
+        <p class="lead"><i class="icon-building icon-2x pull-left"></i>The Cleveland State University Human Motion and Control Research Group was founded in 2012 when Ton van den Bogert was hired as the Parker-Hannifin Endowed Chair in Human Motion and Control in the Department of Mechanical Engineering. This led to the creation of the Parker Hannifin Human Motion and Control Laboratory which has state of the art equipment for measurement and study of human motion (primarily gait in walking and running).</p>
+        </span>
+    </div>
+    <div class="row-fluid">
+        <span class="span12">
         <h3>Contextual</h3>
 
         <p class="lead"><i class="icon-suitcase icon-2x pull-left"></i>The open source CMS specialists at Contextual provide content management solutions to empower your content and your organization.</p>
