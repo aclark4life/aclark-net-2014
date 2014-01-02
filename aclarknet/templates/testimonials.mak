@@ -25,6 +25,13 @@
 
     <div class="row-fluid">
         <span class="span12">
+            <h3><i class="icon-user"></i> Michael Fortun, Associate Professor, Science and Technology Studies (STS), Rensselaer Polytechnic Institute</h3>
+            <p class="quote"><span class="pull-right">01/12/2013</span><br /><br />We're really happy with what you've made for us.  I know you really worked long and hard, and even longer and harder, on the project, and we are most satisfied and appreciative.  And just plain pleased -- it has been great to work with you.</p>
+        </span>
+    </div>
+
+    <div class="row-fluid">
+        <span class="span12">
             <h3><i class="icon-user"></i> Kimberly Seese, Communications Specialist at Land Trust Alliance</h3>
             <p class="quote"><span class="pull-right">01/12/2013</span><br /><br />Alex and his company successfully bid to perform enhancements to the Land Trust Alliance website in July 2011 and have been doing routine development and maintenance ever since. We are very happy with their performance, and the performance of our site!</p>
         </span>
