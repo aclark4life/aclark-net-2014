@@ -25,7 +25,7 @@
 
     <div id="jason-moore" class="row-fluid">
         <span class="span12">
-            <h3><i class="icon-user"></i> Jason Moore, Post Doctoral Researcher, Cleveland State University</h3>
+            <h3><i class="icon-user"></i> Jason Moore, Post Doctoral Researcher, Human Motion and Control Lab, Cleveland State University</h3>
             <p class="quote"><span class="pull-right">01/05/14</span><br /><br />I got what I expected from our initial conversations and I'm pleased with the result. Thanks for the nice work. It looks really good.</p>
         </span>
     </div>
