@@ -23,6 +23,13 @@
     <h1>Testimonials</h1>
     <h2>A select list of endorsements from our many happy clients.</h2>
 
+    <div id="jason-moore" class="row-fluid">
+        <span class="span12">
+            <h3><i class="icon-user"></i>Jason Moore, Post Doctoral Researcher, Cleveland State University</h3>
+            <p class="quote"><span class="pull-right">01/05/14</span><br /><br /><p>I got what I expected from our initial conversations and I'm pleased with the result. Thanks for the nice work. It looks really good.</p>
+        </span>
+    </div>
+
     <div id="mike-fortun" class="row-fluid">
         <span class="span12">
             <h3><i class="icon-user"></i> Michael Fortun, Associate Professor, Science and Technology Studies (STS), Rensselaer Polytechnic Institute</h3>
