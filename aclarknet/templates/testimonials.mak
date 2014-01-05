@@ -23,7 +23,7 @@
     <h1>Testimonials</h1>
     <h2>A select list of endorsements from our many happy clients.</h2>
 
-    <div class="row-fluid">
+    <div id="mike-fortun" class="row-fluid">
         <span class="span12">
             <h3><i class="icon-user"></i> Michael Fortun, Associate Professor, Science and Technology Studies (STS), Rensselaer Polytechnic Institute</h3>
             <p class="quote"><span class="pull-right">9/17/13</span><br /><br />We're really happy with what you've made for us.  I know you really worked long and hard, and even longer and harder, on the project, and we are most satisfied and appreciative.  And just plain pleased -- it has been great to work with you.</p>
