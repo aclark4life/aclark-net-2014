@@ -4,6 +4,9 @@
     .row {
         margin: 0 0 4em 0;
     }
+    .footer {
+        color: white;
+    }
 </%block>
 
 <%block name="title">

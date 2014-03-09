@@ -4,6 +4,9 @@
     .row {
         border-radius: 0;
     }
+    .footer {
+        color: white;
+    }
 </%block>
 
 <%block name="title">

@@ -101,7 +101,7 @@ ividuals and organizations and are always eager and available to help.</p>
 
         <p class="pull-left">&copy; ACLARK.NET, LLC 2004-2014</p>
 
-        <p class="pull-right" style="color: white">
+        <p class="pull-right"> 
             Fork on <a href="https://github.com/ACLARKNET/aclarknet">GitHub</a>.
             Icons by <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>.
             Made with <a href="http://twitter.github.io/bootstrap">Bootstrap</a> and <a href="http://pylonsproject.org">Pyramid</a>.

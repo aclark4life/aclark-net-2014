@@ -1,5 +1,11 @@
 <%inherit file="root.mak"/>
 
+<%block name="style">
+    .footer {
+        color: white;
+    }
+</%block>
+
 <%block name="title">
     <title>ACLARK.NET, LLC &mdash; Projects</title>
 </%block>
