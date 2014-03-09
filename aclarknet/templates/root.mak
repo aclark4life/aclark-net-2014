@@ -49,7 +49,7 @@
     <div class="container">
 
       <div class="masthead">
-        <h3 class="text-muted"><a href="/">ACLARK.NET, LLC</a></h3>
+        <h3 class="text-muted"><a style="text-decoration: none" href="/">ACLARK.NET, LLC</a></h3>
         <ul class="nav nav-justified">
           <%block name="nav">
             <li class="active"><a href="#">Home</a></li>
