@@ -21,7 +21,7 @@
             <p class="lead"><i class="icon-envelope icon-2x pull-left"></i><i class="icon-phone icon-2x pull-left"></i>The Python programming language and open source software in general provide tremendous opportunities to businesses, but often require an expert to take advantage of. We provide services that empower individuals and organizations to benefit from such opportunities, and we would love to help you! Please contact us to schedule a time to discuss your needs. We look forward to working with you.</p>
             <br />
             <br />
-            <div style="text-align: left ; margin: auto; width: 740px;">
+            <div style="text-align: center ; margin: auto; width: 740px;">
                 <% error = request.session.pop_flash('errors') %>
                 <% success = request.session.pop_flash() %>
                 % if error:
@@ -36,7 +36,7 @@
             <p class="contact">
                 ACLARK.NET, LLC <br />
                 Bethesda, MD USA <br />
-                Email: <a href="mailto:info@aclark.net">info@aclark.net</a> <br />
+                Email: <a href="mailto:sales@aclark.net">sales@aclark.net</a> <br />
                 Phone: 301-312-5236
             </p>
             <!--

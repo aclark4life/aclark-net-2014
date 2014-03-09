@@ -7,8 +7,8 @@ GMAIL_HOSTNAME = 'smtp.gmail.com'
 GMAIL_PASSWORD = os.environ.get('GMAIL_PASSWORD', 'password')
 GMAIL_USERNAME = os.environ.get('GMAIL_USERNAME', 'username')
 
-MIME_ONE_RECIPIENT = 'info@aclark.net'
-MIME_ONE_SUBJECT = 'This just in: new lead!'
+MIME_ONE_RECIPIENT = 'sales@aclark.net'
+MIME_ONE_SUBJECT = 'New contact'
 MIME_TWO_MESSAGE = \
     """
 Thanks for contacting us! We'll be in touch within 24 hours.

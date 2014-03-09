@@ -27,7 +27,7 @@ def contact(request):
     Create and render deform form containing colander schema. Provide
     sendgrid integration for marketing.
     """
-    button = deform.Button('Send', css_class='span9 btn-block btn-large')
+    button = deform.Button('Send', css_class='send-mail-button')
     schema = ContactFormSchema().bind(request=request)
     form = deform.Form(schema, buttons=(button, ))
     if 'Send' in request.POST:
@@ -43,7 +43,7 @@ def contact(request):
         email = appstruct['email']
         message = appstruct['message']
 
-        # This is the mail to info@aclark.net
+        # This is the mail to sales@aclark.net
         mime_document_one = MIMEText(message)
         mime_document_one['Subject'] = MIME_ONE_SUBJECT
         mime_document_one['To'] = MIME_ONE_RECIPIENT
@@ -59,7 +59,7 @@ def contact(request):
         mime_document_two = mime_document_two.as_string()
 
         try:
-            # This is the mail to info@aclark.net
+            # This is the mail to sales@aclark.net
             smtp_server = smtplib.SMTP(GMAIL_HOSTNAME)
             smtp_server.starttls()
             smtp_server.login(GMAIL_USERNAME, GMAIL_PASSWORD)

@@ -36,10 +36,16 @@ class ContactFormSchema(CSRFSchema):
     Contact form schema, built with colander, to be used with the deform form
     library
     """
+
+    css_widget = deform.widget.TextInputWidget(
+            size=60, css_class='deformWidgetWithStyle')
+
     email = colander.SchemaNode(
         colander.String(),
         title="Your email address",
         validator=colander.Email(),
+#        widget=deform.widget.TextAreaWidget(rows=1, cols=120),
+        widget=css_widget,
     )
     message = colander.SchemaNode(
         colander.String(),
