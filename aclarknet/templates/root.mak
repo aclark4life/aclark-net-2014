@@ -41,6 +41,7 @@
 
     <link href="/static/font-awesome.css" rel="stylesheet">
 
+    <link href="/static/aclarknet.css" rel="stylesheet">
 
   </head>
 
@@ -65,7 +66,7 @@
       <!-- Jumbotron -->
       <%block name="jumbotron">
       <div class="jumbotron">
-        <h1>We know Python.<br />We know open source.</h1>
+        <h1 style="font-weight: bold;">We know Python.<br />We know open source.</h1>
         <p class="lead">Create professional web services for your business efficiently, effectively and economically with open source Python software.
         We&apos;ll show you how&hellip;</p>
 
@@ -78,17 +79,19 @@
           <h2>Team</h2>
           <p><i class="icon-group icon-2x pull-left"></i>Our team offers extensive experience in the development, deployment and maintenance of Python-based w
 eb applications. Please review our services, team, and clients sections for a summary of our experience and qualifications.</p>
-          <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-primary" href="/team" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+          <h2>Community</h2>
+          <p><i class="icon-group icon-2x pull-left"></i>In 2008, we created a Maryland 501(c)(3) non-profit organization to expand our outreach and service t
+o the Python community in Washington, DC USA. One of our most significant contributions via this organization is the hosting of Plone Conference 2008.</p>
+          <p><a class="btn btn-primary" href="http://dcpython.org">View details &raquo;</a></p>
        </div>
         <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-          <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+          <h2>Location</h2>
+          <p><i class="icon-globe icon-2x pull-left"></i>We are located in Bethesda, MD, a suburb of Washington, DC, USA. We service a global community of ind
+ividuals and organizations and are always eager and available to help.</p>
+          <p><a class="btn btn-primary" href="/contact">View details &raquo;</a></p>
         </div>
       </div>
       </%block>
