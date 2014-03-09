@@ -1,7 +1,7 @@
 <%inherit file="root.mak"/>
 
 <%block name="style">
-    .row-fluid {
+    .row {
         border-radius: 0;
     }
 </%block>
@@ -22,7 +22,7 @@
 <%block name="jumbotron">
     <h1>Services</h1>
     <h2>We provide a variety of services related to Python software development, deployment, maintenance and education.</h2>
-    <div class="row-fluid">
+    <div class="row">
         <span class="span12">
             <h2>Consulting</h2>
             <h3>Professional Consulting Services</h3>
@@ -30,7 +30,7 @@
         </span>
     </div>
 
-    <div class="row-fluid">
+    <div class="row">
         <span class="span12">
             <h2>Development</h2>
             <h3>Python Web Development</h3>
@@ -38,7 +38,7 @@
         </span>
     </div>
 
-    <div class="row-fluid">
+    <div class="row">
         <span class="span12">
             <h2>Hosting</h2>
             <h3>Python Website Hosting</h3>
@@ -46,7 +46,7 @@
         </span>
     </div>
 
-    <div class="row-fluid">
+    <div class="row">
         <span class="span12">
             <h2>Training</h2>
             <h3>Python Developer Training</h3>
@@ -54,7 +54,7 @@
         </span>
     </div>
 
-    <div class="row-fluid">
+    <div class="row">
         <span class="span12">
             <h2 id="support">Support</h2>
             <h3>Python Application Support</h3>
@@ -62,7 +62,7 @@
         </span>
     </div>
 
-    <div class="row-fluid">
+    <div class="row">
         <span class="span12">
         <h2>Applications</h2>
         <h3>Software As A Service Offering</h3>

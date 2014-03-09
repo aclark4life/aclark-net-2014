@@ -1,7 +1,7 @@
 <%inherit file="root.mak"/>
 
 <%block name="style">
-    .row-fluid {
+    .row {
         border-radius: 0;
     }
 </%block>
@@ -22,7 +22,7 @@
 <%block name="jumbotron">
     <h1>Team</h1>
     <h2>We proudly work with a talented and diverse group of people from all over the world.</h2>
-    <div class="row-fluid">
+    <div class="row">
         <span class="span12">
             <h2>Alex Clark</h2>
             <h3>Founding Partner, Lead Developer, President</h3>
@@ -31,7 +31,7 @@
         </span>
     </div>
 
-    <div class="row-fluid">
+    <div class="row">
         <span class="span12">
             <h2>Amy Clark</h2>
             <h3>Business Coordinator, Partner</h3>
@@ -40,7 +40,7 @@
         </span>
     </div>
 
-    <div class="row-fluid">
+    <div class="row">
         <span class="span12">
             <h2>Tim Knapp</h2>
             <h3>Plone Consultant</h3>
@@ -49,7 +49,7 @@
         </span>
     </div>
 
-    <div class="row-fluid">
+    <div class="row">
         <span class="span12">
             <h2>Rob Porter</h2>
             <h3>Plone Consultant</h3>
@@ -58,7 +58,7 @@
         </span>
     </div>
 
-    <div class="row-fluid">
+    <div class="row">
         <span class="span12">
             <h2>Steve Barber</h2>
             <h3>Systems Consultant</h3>
@@ -67,7 +67,7 @@
         </span>
     </div>
 
-    <div class="row-fluid">
+    <div class="row">
         <span class="span12">
             <h2>Andy McKay</h2>
             <h3>Django Consultant</h3>
@@ -76,7 +76,7 @@
         </span>
     </div>
 
-    <div class="row-fluid">
+    <div class="row">
         <span class="span12">
             <h2>Reed O&apos;Brien</h2>
             <h3>Python Consultant</h3>
@@ -85,7 +85,7 @@
         </span>
     </div>
 
-    <div class="row-fluid">
+    <div class="row">
         <span class="span12">
             <h2>Matt Bowen</h2>
             <h3>Web Technologist</h3>
@@ -94,7 +94,7 @@
         </span>
     </div>
 
-    <div class="row-fluid">
+    <div class="row">
         <span class="span12">
             <h2>Daniel Greenfeld</h2>
             <h3>Django Consultant</h3>
@@ -103,7 +103,7 @@
         </span>
     </div>
 
-    <div class="row-fluid">
+    <div class="row">
         <span class="span12">
             <h2>Wendell Turner</h2>
             <h3>Python Consultant</h3>
@@ -112,7 +112,7 @@
         </span>
     </div>
 
-    <div class="row-fluid">
+    <div class="row">
         <span class="span12">
             <h2>Rok Garbas</h2>
             <h3>Plone Consultant</h3>
@@ -121,7 +121,7 @@
         </span>
     </div>
 
-    <div class="row-fluid">
+    <div class="row">
         <span class="span12">
             <h2>Larry Pitcher</h2>
             <h3>Plone Consultant</h3>
@@ -129,7 +129,7 @@
             <p class="lead"><img class="img-polaroid pull-left" src="/static/unclelarry.jpg" style="margin-right: 1em">Larry Pitcher has been active in the Plone community since 2004 and has built Plone sites for clients in the banking, non-profit, government, bio-tech, and small-business sectors. He also writes training materials for end-users of Plone sites. Larry has been programming and using computers since before the IBM PC was introduced. He worked as a COBOL programmer in the United States Air Force, and later got involved in Network Management, System Administration, Web Development, and Open Source Software.</p>
         </span>
     </div>
-    <div class="row-fluid">
+    <div class="row">
         <span class="span12">
             <h2>Ken Cochrane</h2>
             <h3>Django Consultant</h3>
