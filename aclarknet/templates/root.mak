@@ -102,6 +102,7 @@ eb applications. Please review our services, team, and clients sections for a su
             Made with <a href="http://twitter.github.io/bootstrap">Bootstrap</a> and <a href="http://pylonsproject.org">Pyramid</a>.
             Icons by <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>.
             Photo by <a href="http://about.me/alex.clark">Alex Clark</a>.
+            Fork on <a href="https://github.com/ACLARKNET/aclarknet">GitHub</a>.
         </p>
 
         <p style="text-align: center">
