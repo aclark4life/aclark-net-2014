@@ -27,7 +27,7 @@
 
     <style type="text/css">
       body {
-        background: url(http://ec944bcf33b48b690862-191a9659b8fb7703d8bd848e1f8d96be.r38.cf1.rackcdn.com/IMG_0256.JPG) center top no-repeat #24261A;
+        background: url(/static/background.jpg) center top no-repeat #24261A;
       }
       .row {
         background: #f9f9f9;
