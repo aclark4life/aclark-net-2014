@@ -101,7 +101,7 @@
         <p class="pull-right"> 
             Fork on <a href="https://github.com/ACLARKNET/aclarknet">GitHub</a>.
             Icons by <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>.
-            Made with <a href="http://twitter.github.io/bootstrap">Bootstrap</a> and <a href="http://pylonsproject.org">Pyramid</a>.
+            Made with <a href="http://getbootstrap.com">Bootstrap</a> and <a href="http://pylonsproject.org">Pyramid</a>.
             Photo by <a href="http://about.me/alex.clark">Alex Clark</a>.
         </p>
 
