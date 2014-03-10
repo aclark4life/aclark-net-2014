@@ -37,19 +37,23 @@ class ContactFormSchema(CSRFSchema):
     library
     """
 
-    css_widget = deform.widget.TextInputWidget(
-            size=60, css_class='deformWidgetWithStyle')
+    email_widget = deform.widget.TextInputWidget(
+            size=60, css_class='email_widget')
+
+    body_widget = deform.widget.TextAreaWidget(
+            rows=20, cols=120, css_class='body_widget')
 
     email = colander.SchemaNode(
         colander.String(),
         title="Your email address",
         validator=colander.Email(),
 #        widget=deform.widget.TextAreaWidget(rows=1, cols=120),
-        widget=css_widget,
+        widget=email_widget,
     )
     message = colander.SchemaNode(
         colander.String(),
-        title="How can we help you",
+        title="How may we help you",
         validator=colander.Length(1),
-        widget=deform.widget.TextAreaWidget(rows=20, cols=120),
+#        widget=deform.widget.TextAreaWidget(rows=20, cols=120),
+        widget=body_widget,
     )

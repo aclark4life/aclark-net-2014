@@ -42,8 +42,14 @@ textarea {
     margin: 1em;
 }
 
-.deformWidgetWithStyle {
+.email_widget {
     font-size: 300%;
     height: 75px;
+    width: 75%;
+}
+
+.body_widget {
+    font-size: 300%;
+    height: 150px;
     width: 75%;
 }
