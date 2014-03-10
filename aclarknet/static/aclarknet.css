@@ -37,9 +37,9 @@ textarea {
 }
 
 .send-mail-button {
-    font-size: 200%;
-    width: 400px;
-    margin: 1em;
+    font-size: 300%;
+    width: 50%;
+    margin: 20px;
 }
 
 .email_widget {
