@@ -25,8 +25,13 @@
     <div class="row">
         <div class="span12">
             <p class="lead"><i class="icon-envelope icon-2x pull-left"></i><i class="icon-phone icon-2x pull-left"></i>The Python programming language and open source software in general provide tremendous opportunities to businesses, but often require an expert to take advantage of. We provide services that empower individuals and organizations to benefit from such opportunities, and we would love to help you! Please contact us to schedule a time to discuss your needs. We look forward to working with you.</p>
-            <br />
-            <br />
+            <p class="contact">
+                ACLARK.NET, LLC <br />
+                Bethesda, MD USA <br />
+                Email: <a href="mailto:sales@aclark.net">sales@aclark.net</a> <br />
+                Phone: 301-312-5236
+            </p>
+            <hr />
             <div style="text-align: center ; margin: auto; width: 740px;">
                 <% error = request.session.pop_flash('errors') %>
                 <% success = request.session.pop_flash() %>
@@ -38,22 +43,6 @@
                 % endif
                 ${form|n}
             </div>
-            <hr>
-            <p class="contact">
-                ACLARK.NET, LLC <br />
-                Bethesda, MD USA <br />
-                Email: <a href="mailto:sales@aclark.net">sales@aclark.net</a> <br />
-                Phone: 301-312-5236
-            </p>
-            <!--
-            <form action="/contact" method="POST">
-                <p class="contact">
-                    <input type="text" placeholder="Your email">
-                    <textarea rows="3" placeholder="Your message"></textarea>
-                    <input class="btn btn-block btn-large" type="submit" value="Send"> 
-                </p>
-            </form>
-            -->
         </div>
     </div>
 </%block>
