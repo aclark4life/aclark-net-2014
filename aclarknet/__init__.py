@@ -19,9 +19,9 @@ def main(global_config, **settings):
     config.add_route('blog_slash', '/blog/')
     config.add_route('contact', '/contact')
     config.add_route('clients', '/clients')
-    config.add_route('projects', '/projects')
     config.add_route('services', '/services')
     config.add_route('team', '/team')
+    config.add_route('technology', '/technology')
     config.add_route('testimonials', '/testimonials')
     config.add_route('root', '/')
     config.add_static_view(
@@ -39,8 +39,8 @@ def main(global_config, **settings):
         route_name='contact')
     config.add_view(
         default,
-        renderer='aclarknet:templates/projects.mak',
-        route_name='projects')
+        renderer='aclarknet:templates/technology.mak',
+        route_name='technology')
     config.add_view(
         default,
         renderer='aclarknet:templates/root.mak',
