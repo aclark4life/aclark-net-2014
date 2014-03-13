@@ -77,7 +77,7 @@
       <div class="row">
         <div class="col-lg-4">
           <h2>Team</h2>
-          <p><i class="icon-group icon-2x pull-left"></i>Our team offers extensive experience in the development, deployment and maintenance of Python-based web applications. Please review our services, team, and clients sections for a summary of our experience and qualifications.</p>
+          <p><i class="icon-group icon-2x pull-left"></i>Our team offers extensive experience in the development, deployment and maintenance of <a href="/technology">Python-based web applications</a>. Please review our services, team, and clients sections for a summary of our experience and qualifications.</p>
           <p><a class="btn btn-primary" href="/team" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-lg-4">
