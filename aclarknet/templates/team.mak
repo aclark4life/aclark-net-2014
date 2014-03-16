@@ -24,7 +24,7 @@
 
 <%block name="jumbotron">
     <h1>Team</h1>
-    <h2>We work with a talented group of people from all over the world.</h2>
+    <h2>We work with talented people from all over the world.</h2>
     <div class="row">
         <span class="span12">
             <h2>Alex Clark</h2>
