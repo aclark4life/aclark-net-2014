@@ -24,3 +24,10 @@ def blog_slash(request):
     Redirect http://aclark.net/blog/ to http://blog.aclark.net
     """
     return HTTPMovedPermanently(location=REDIR_TARGET_BASE)
+
+
+def book(request):
+    """
+    Redirect http://aclark.net/book to http://www.packtpub.com/plone-33-site-administration/book
+    """
+    return HTTPMovedPermanently(location='http://www.packtpub.com/plone-33-site-administration/book')
