@@ -82,7 +82,7 @@
         </div>
         <div class="col-lg-4">
           <h2>Community</h2>
-          <p><i class="icon-group icon-2x pull-left"></i>In 2008 we created a 501(c)(3) non-profit organization in the State of Maryland to expand our outreach and service to the Python community in DC. One of our most significant contributions via this organization is the hosting of <a href="http://plone.org/2008">Plone Conference 2008</a>.</p>
+          <p><i class="icon-group icon-2x pull-left"></i>In 2008 we created a 501(c)(3) non-profit organization in the State of Maryland to expand our outreach and service to the <a href="http://dcpython.org">Python community in DC</a>. One of our most significant contributions via this organization is the hosting of <a href="http://plone.org/2008">Plone Conference 2008</a>.</p>
           <p><a class="btn btn-default" href="http://dcpython.org">View details &raquo;</a></p>
        </div>
         <div class="col-lg-4">
