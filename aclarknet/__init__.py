@@ -20,6 +20,7 @@ def main(global_config, **settings):
     config.add_route('blog_entry', '/blog/{entry:.*}')
     config.add_route('blog_slash', '/blog/')
     config.add_route('book', '/book')
+    config.add_route('book-promo', '/book-promo')
     config.add_route('contact', '/contact')
     config.add_route('clients', '/clients')
     config.add_route('services', '/services')
@@ -32,11 +33,11 @@ def main(global_config, **settings):
     config.add_view(blog, route_name='blog')
     config.add_view(blog_entry, route_name='blog_entry')
     config.add_view(blog_slash, route_name='blog_slash')
-#    config.add_view(book, route_name='book')
+    config.add_view(book, route_name='book')
     config.add_view(
         default,
         renderer='aclarknet:templates/book.mak',
-        route_name='book')
+        route_name='book-promo')
     config.add_view(
         default,
         renderer='aclarknet:templates/clients.mak',
