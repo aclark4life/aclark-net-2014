@@ -29,7 +29,7 @@
         <span class="span12">
             <h2>Consulting</h2>
             <h3>Professional Consulting Services</h3>
-            <p class="lead"><i class="icon-lightbulb icon-2x pull-left"></i>ACLARK.NET, LLC's consulting services offer clients professional, subject matter expert-level evaluation of a <a href="/projects">current or proposed project</a>, technical environment/infrastructure, and/or other website related challenges and issues. We then develop findings and offer conclusions and recommendations to clients to use for either current or future decision making purposes. Consulting services are flexible and designed to meet each and every client's particular needs and circumstances.</p>
+            <p class="lead"><i class="icon-lightbulb icon-2x pull-left"></i>ACLARK.NET, LLC's consulting services offer clients professional, subject matter expert-level evaluation of a <a href="/technology">current or proposed project</a>, technical environment/infrastructure, and/or other website related challenges and issues. We then develop findings and offer conclusions and recommendations to clients to use for either current or future decision making purposes. Consulting services are flexible and designed to meet each and every client's particular needs and circumstances.</p>
         </span>
     </div>
 
