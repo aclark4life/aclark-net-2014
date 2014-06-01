@@ -66,7 +66,7 @@
       <!-- Jumbotron -->
       <%block name="jumbotron">
       <div class="jumbotron">
-        <h1 style="font-weight: bold;">We know Python.<br />We know open source.</h1>
+        <h1 style="font-weight: bold;">We know Python.<br />We know open source.<br />We <a href="/book">wrote the book</a> on Plone site deployments.</h1>
         <p class="lead">Create professional web services for your business efficiently, effectively and economically with open source Python software.
         We&apos;ll show you how&hellip;</p>
 

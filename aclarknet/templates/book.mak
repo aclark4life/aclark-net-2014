@@ -7,7 +7,7 @@
 </%block>
 
 <%block name="title">
-    <title>ACLARK.NET, LLC &mdash; Projects</title>
+    <title>ACLARK.NET, LLC &mdash; Book</title>
 </%block>
 
 <%block name="nav">
@@ -20,8 +20,8 @@
 </%block>
 
 <%block name="jumbotron">
-    <h1>Plone 3.3 Site Administration</h1>
-    <h2>We wrote the book on professional Plone site deployments.</h2>
+    <h1>Book</h1>
+    <h2 style="text-align: center">We <a href="http://www.packtpub.com/plone-33-site-administration/book">wrote the book</a> on Plone site deployments.</h2>
     <br />
-    <img src="/static/book.png">
+    <div style="text-align:center"><img src="/static/book.png"></div>
 </%block>
