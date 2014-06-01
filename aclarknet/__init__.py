@@ -15,6 +15,7 @@ def main(global_config, **settings):
     """
     my_session_factory = UnencryptedCookieSessionFactoryConfig('itsaseekreet')
     config = Configurator(session_factory=my_session_factory)
+    config.include('pyramid_mako')
     config.add_route('blog', '/blog')
     config.add_route('blog_entry', '/blog/{entry:.*}')
     config.add_route('blog_slash', '/blog/')
