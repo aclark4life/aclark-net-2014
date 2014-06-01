@@ -31,7 +31,11 @@ def main(global_config, **settings):
     config.add_view(blog, route_name='blog')
     config.add_view(blog_entry, route_name='blog_entry')
     config.add_view(blog_slash, route_name='blog_slash')
-    config.add_view(book, route_name='book')
+#    config.add_view(book, route_name='book')
+    config.add_view(
+        default,
+        renderer='aclarknet:templates/book.mak',
+        route_name='book')
     config.add_view(
         default,
         renderer='aclarknet:templates/clients.mak',

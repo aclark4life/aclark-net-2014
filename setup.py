@@ -9,6 +9,7 @@ setup(
         'deform',
         'deform_bootstrap',
         'pyramid',
+        'pyramid_mako',
         'waitress',
     ],
     name='aclarknet',
