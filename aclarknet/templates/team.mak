@@ -30,7 +30,7 @@
             <h2>Alex Clark</h2>
             <h3>Founding Partner, Lead Developer, President</h3>
             <h4>Bethesda, MD USA</h4>
-            <p class="lead"><img class="img-polaroid pull-left" src="/static/aclark-2013.jpg" style="margin-right: 1em">Alex Clark is Python Web Developer and Musician. He has a Bachelor of Science in Computer Science from Loyola University in Maryland and has worked professionally as a System Administrator, Network Engineer, and Software Engineer since 1996. He is also the president of <a href="http://dcpython.org">DC Python</a>, a non-profit organization focused on promoting Python software in DC. Read more about Alex <a href="http://about.me/alex.clark">here</a>.</p> 
+            <p class="lead"><img class="img-polaroid pull-left" src="/static/aclark-2013.jpg" style="margin-right: 1em">Alex Clark is <a href="http://about.me/alex.clark">Python Web Developer and Musician</a>. He has a Bachelor of Science in Computer Science from Loyola University in Maryland and has worked professionally as a System Administrator, Network Engineer, and Software Engineer since 1996. He is also the president of <a href="http://dcpython.org">DC Python</a>, a non-profit organization focused on promoting Python software in DC. Read more about Alex <a href="http://about.aclark.net">here</a>.</p> 
         </span>
     </div>
 
