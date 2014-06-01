@@ -21,7 +21,7 @@
 
 <%block name="jumbotron">
     <h1>Book</h1>
-    <h2 style="text-align: center">We <a href="http://www.packtpub.com/plone-33-site-administration/book">wrote the book</a> on Plone site deployments. Buy a copy today to learn how to deploy your site with <a href="https://github.com/buildout/buildout">Buildout.</a></h2>
+    <h2 style="text-align: center">We <a href="http://www.packtpub.com/plone-33-site-administration/book">wrote the book</a> on Plone site deployments. <a href="http://www.packtpub.com/plone-33-site-administration/book">Buy a copy today</a> to learn how to deploy your site with <a href="https://github.com/buildout/buildout">Buildout</a>.</h2>
     <br />
     <div style="text-align:center"><img src="/static/book.png"></div>
 </%block>
