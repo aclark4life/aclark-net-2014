@@ -21,7 +21,7 @@
 
 <%block name="jumbotron">
     <h1>Book</h1>
-    <h2 style="text-align: center">We <a href="http://www.packtpub.com/plone-33-site-administration/book">wrote the book</a> on Plone site deployments. <a href="http://www.packtpub.com/plone-33-site-administration/book">Buy a copy today</a> to master Plone site deployments with <a href="https://github.com/buildout/buildout">Buildout</a>. Though based on Plone 3.3, this book will help you with Plone 4, 5 and beyond; the approach presented therein continue within the <a href="http://plock.github.io/">Plock</a> project.</h2>
+    <h2 style="text-align: center">We <a href="http://www.packtpub.com/plone-33-site-administration/book">wrote the book</a> on Plone site deployments. <a href="http://www.packtpub.com/plone-33-site-administration/book">Buy a copy today</a> to master Plone site deployments with <a href="https://github.com/buildout/buildout">Buildout</a>. Though based on Plone 3.3, this book will help you with Plone 4, 5 and beyond; and the approach presented herein continues to be developed within the <a href="http://plock.github.io/">Plock</a> project.</h2>
     <br />
     <div style="text-align:center"><img src="/static/book.png"></div>
 </%block>
